@@ -1,4 +1,4 @@
-%% LaTeX .tex
+%% LaTeX.tex
 %% Example for the proceedings of the 19th Brazilian Congress of Thermal Sciences and Engineering
 %% ENCIT 20222
 %% November, 6-10, 2022 (Online)
@@ -66,6 +66,16 @@ Preliminary results indicate the consistency and feasibility of the technique.}\
 
 \section{INTRODUCTION}
 In the ever-evolving realm of drone technology, the precise estimation of propeller rotational speed stands as a pivotal challenge. The need of knowing this information provides further analysis, such as dynamic control, precise noise sources identifications with decomposition techniques and failure prediction. Small-scale propellers, typically found in drones, necessitate accurate measurement techniques amidst the backdrop of inherent experimental fluctuations. Traditional methods, reliant on tachometer data, often falter due to practical constraints and environmental sensitivities, prompting a quest for alternative methodologies. 
+
+For this matter, \cite{BONNARDOT2005766} proposed a tacholess technique of estimating the instantaneous rotation of a shaft with limited frequency fluctuations. The method is based on the phase demodulation and utilizes the Hilbert Transform, a matematical instrument to obtain the imaginary part of the analytic signal, which corresponds to the phase of the signal. The main achievement of this technique is that extincts the need of a tachometer, the instant rotation can calculated based on the shaft vibration data.
+
+This work is organized as follows: Section 2 presents the methodology of the phase demodulation technique, describing in details the physics behind the numerical calculation. Section 3 describes some setups of both numerical and experimental data and Section 4 compares the results with the tachometer real information, as well as evaluates the components of the resampled signal with Time Synchronous Averaging (TSA) techiniques. Finally, Section 5 concludes the consistency of the demodulation method.
+
+
+
+
+
+
 \section{TEXT FORMAT}
 
 The manuscripts should be written in English, typed in A4 size pages, using font Times New Roman, size 10, except for the title, authors affiliation, abstract and keywords, for which particular formatting instructions are indicated above. Single space between lines is to be used throughout the text.
