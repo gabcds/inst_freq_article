@@ -6,46 +6,53 @@ The style file: abcm.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: bibfile.bib
 Warning--I didn't find a database entry for "BandarraFilho2011"
+Warning--I didn't find a database entry for "CavaliniJunior2015"
+Warning--I didn't find a database entry for "Santos2013a"
+Warning--I didn't find a database entry for "Santos2013b"
+Warning--I didn't find a database entry for "MLA04"
+Warning--I didn't find a database entry for "CavaliniJunior2013"
+Warning--I didn't find a database entry for "coelho2017"
+Warning--I didn't find a database entry for "McConnell.Varoto.2008"
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-You've used 8 entries,
+You've used 5 entries,
             3271 wiz_defined-function locations,
-            715 strings with 6943 characters,
-and the built_in function-call counts, 5102 in all, are:
-= -- 392
-> -- 218
-< -- 11
-+ -- 84
-- -- 75
-* -- 355
-:= -- 779
-add.period$ -- 29
-call.type$ -- 8
-change.case$ -- 68
-chr.to.int$ -- 13
-cite$ -- 8
-duplicate$ -- 406
-empty$ -- 380
-format.name$ -- 95
-if$ -- 1016
-int.to.chr$ -- 2
+            718 strings with 6926 characters,
+and the built_in function-call counts, 4161 in all, are:
+= -- 342
+> -- 154
+< -- 14
++ -- 59
+- -- 54
+* -- 310
+:= -- 579
+add.period$ -- 26
+call.type$ -- 5
+change.case$ -- 43
+chr.to.int$ -- 5
+cite$ -- 5
+duplicate$ -- 325
+empty$ -- 298
+format.name$ -- 69
+if$ -- 862
+int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 84
-newline$ -- 53
-num.names$ -- 32
-pop$ -- 194
+missing$ -- 63
+newline$ -- 46
+num.names$ -- 20
+pop$ -- 111
 preamble$ -- 1
-purify$ -- 57
+purify$ -- 38
 quote$ -- 0
-skip$ -- 144
+skip$ -- 135
 stack$ -- 0
-substring$ -- 156
-swap$ -- 218
-text.length$ -- 5
+substring$ -- 195
+swap$ -- 222
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 69
+type$ -- 45
 warning$ -- 0
-while$ -- 29
+while$ -- 25
 width$ -- 0
-write$ -- 120
-(There was 1 warning)
+write$ -- 96
+(There were 8 warnings)

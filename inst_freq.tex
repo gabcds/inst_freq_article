@@ -65,16 +65,19 @@ Preliminary results indicate the consistency and feasibility of the technique.}\
 \end{tabular}
 
 \section{INTRODUCTION}
-In the ever-evolving realm of drone technology, the precise estimation of propeller rotational speed stands as a pivotal challenge. The need of knowing this information provides further analysis, such as dynamic control, precise noise sources identifications with decomposition techniques and failure prediction. Small-scale propellers, typically found in drones, necessitate accurate measurement techniques amidst the backdrop of inherent experimental fluctuations. Traditional methods, reliant on tachometer data, often falter due to practical constraints and environmental sensitivities, prompting a quest for alternative methodologies. 
+In the ever-evolving realm of drone technology, the precise estimation of propeller rotational speed stands as a pivotal challenge. The need of knowing this information provides further analysis, such as dynamic control, precise noise sources identifications with decomposition techniques and failure prediction.
 
-For this matter, \cite{BONNARDOT2005766} proposed a tacholess technique of estimating the instantaneous rotation of a shaft with limited frequency fluctuations. The method is based on the phase demodulation and utilizes the Hilbert Transform, a matematical instrument to obtain the imaginary part of the analytic signal, which corresponds to the phase of the signal. The main achievement of this technique is that extincts the need of a tachometer, the instant rotation can calculated based on the shaft vibration data.
+Upon scrutinizing the acoustic traits of noise produced by fully electric propulsion systems, it becomes apparent that the primary sources are the interactions between the blades and the airflow, encompassing turbulence and vortical effects. The dominant aspect of the noise spectrum comprises the tonal rendition, characterized by multiples of the blade-pass frequency (BPF), signifying a periodic signal. In contrast, the broadband feature, originating from the blade interactions, disperses energy throughout all frequency bands, exhibiting inherent stochasticity. In order to better analyze the noise sources, the features must be separated, which can express plenty dificulties, upon rotational speed fluctuations.
+
+In this context, the Time Synchronous Averaging Method (TSA) \citep{MCFADDEN1987173} finds extensive application in rotors operating at constant rotational speeds, owing to its straightforward implementation and effectiveness in isolating peaks. The method operates by averaging segments of acoustic data corresponding to a single rotation length in the time domain. However, its efficacy diminishes when applied to systems with varying speeds, as the irregular periodicity of segments undermines its performance. \cite{SHARMA2016560} proposed a tonal and broadband components TSA-based decomposition in order to calculate fault indicators in gears, which considerates the rotational frequency fluctuation, therefore, this technique takes in account the tachometer signal, using n pulses per revolution. With this device it is possible to track the angular position of any shaft. 
+
+Small-scale propellers, typically found in drones, necessitate accurate measurement techniques amidst the backdrop of inherent experimental fluctuations. Traditional methods, reliant on tachometer data, often falter due to practical constraints and environmental sensitivities, prompting a quest for alternative methodologies. \cite{article} presents a complete analysis on various methods that discart the need of a tacho signal.
+
+\cite{Urbanek2011ComparisonOA} investigate three major instantaneous frequency estimation techiniques without any phase markers use in wind turbines speed tracking application. The spectrogram-based method proceeds with a maxima tracking due to the fact the peaks with the highest energy on the spectrogram should correspond to the value of the instantaneous frequency at each moment in time.
+
+In another approach,\cite{BONNARDOT2005766} proposed a tacholess technique of estimating the instantaneous rotation of a shaft with limited frequency fluctuations. The method is based on the phase demodulation and utilizes the Hilbert Transform, a matematical instrument to obtain the imaginary part of the analytic signal, which corresponds to the phase of the signal. The main achievement of this technique is that extincts the need of a tachometer, the instant rotation can calculated based on the shaft vibration data. This work analyses the merits and the feasibility of this method.
 
 This work is organized as follows: Section 2 presents the methodology of the phase demodulation technique, describing in details the physics behind the numerical calculation. Section 3 describes some setups of both numerical and experimental data and Section 4 compares the results with the tachometer real information, as well as evaluates the components of the resampled signal with Time Synchronous Averaging (TSA) techiniques. Finally, Section 5 concludes the consistency of the demodulation method.
-
-
-
-
-
 
 \section{TEXT FORMAT}
 
