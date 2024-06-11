@@ -6,44 +6,48 @@ The style file: abcm.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: bibfile.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-You've used 6 entries,
+Warning--empty year in bonomo; set to ????
+Warning--missing publisher in bonomo
+Warning--empty chapter and pages in bonomo
+You've used 7 entries,
             3271 wiz_defined-function locations,
-            709 strings with 6858 characters,
-and the built_in function-call counts, 4671 in all, are:
-= -- 382
-> -- 172
+            715 strings with 7160 characters,
+and the built_in function-call counts, 5363 in all, are:
+= -- 428
+> -- 214
 < -- 15
-+ -- 66
-- -- 60
-* -- 344
-:= -- 659
-add.period$ -- 30
-call.type$ -- 6
-change.case$ -- 49
-chr.to.int$ -- 6
-cite$ -- 6
-duplicate$ -- 365
-empty$ -- 341
-format.name$ -- 80
-if$ -- 964
++ -- 82
+- -- 75
+* -- 406
+:= -- 768
+add.period$ -- 34
+call.type$ -- 7
+change.case$ -- 58
+chr.to.int$ -- 7
+cite$ -- 10
+duplicate$ -- 413
+empty$ -- 388
+format.name$ -- 98
+if$ -- 1094
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 72
-newline$ -- 52
-num.names$ -- 24
-pop$ -- 134
+missing$ -- 85
+newline$ -- 58
+num.names$ -- 28
+pop$ -- 169
 preamble$ -- 1
-purify$ -- 44
+purify$ -- 53
 quote$ -- 0
-skip$ -- 151
+skip$ -- 162
 stack$ -- 0
-substring$ -- 206
-swap$ -- 239
+substring$ -- 217
+swap$ -- 264
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 51
-warning$ -- 0
-while$ -- 28
+type$ -- 57
+warning$ -- 3
+while$ -- 31
 width$ -- 0
-write$ -- 110
+write$ -- 124
+(There were 3 warnings)

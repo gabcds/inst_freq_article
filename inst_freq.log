@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.4.29)  21 MAY 2024 15:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.4.29)  11 JUN 2024 16:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -301,7 +301,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [1
 
 {C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Figures/Encit_logo.png> <./Figures/abcm_logo.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 94.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 95.
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
@@ -312,27 +312,35 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-4.00764pt}.
 
-[2] (inst_freq.bbl
+[2]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 18.23401pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.23401pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-4.00764pt}.
+
+[3] (inst_freq.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 22.
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-Underfull \hbox (badness 1067) in paragraph at lines 25--35
+Underfull \hbox (badness 1067) in paragraph at lines 34--44
 \T1/ptm/m/n/10 cess-ing of the time do-main av-er-age of the mesh-ing vi-bra-tion''.  \T1/ptm/m/it/10 Me-chan-i-cal Sys-tems and Sig-nal Pro-cess-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--55
+Underfull \hbox (badness 10000) in paragraph at lines 56--64
 []\T1/ptm/m/n/10 Sharma, V. and Parey, A., 2016.  ``Gear crack de-tec-tion us-ing mod-i-fied tsa and pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--55
+Underfull \hbox (badness 10000) in paragraph at lines 56--64
 \T1/ptm/m/n/10 posed fault in-di-ca-tors for fluc-tu-at-ing speed con-di-tions''.  \T1/ptm/m/it/10 Mea-sure-ment\T1/ptm/m/n/10 , Vol. 90, pp. 560--
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--55
+Underfull \hbox (badness 10000) in paragraph at lines 56--64
 \T1/ptm/m/n/10 575.  ISSN 0263-2241.  doi:https://doi.org/10.1016/j.measurement.2016.04.076.  URL
  []
 
@@ -344,24 +352,24 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-4.00764pt}.
 
-[3] (inst_freq.aux)
+[4] (inst_freq.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4468 strings out of 474424
- 73100 string characters out of 5742211
+ 4475 strings out of 474424
+ 73214 string characters out of 5742211
  1942496 words of memory out of 5000000
- 26756 multiletter control sequences out of 15000+600000
+ 26763 multiletter control sequences out of 15000+600000
  582303 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,12n,79p,963b,294s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,13n,79p,963b,296s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on inst_freq.pdf (3 pages, 812090 bytes).
+Output written on inst_freq.pdf (4 pages, 820532 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
+ 141 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{7}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -20,6 +20,15 @@ Bonnardot, F., {El Badaoui}, M., Randall, R., Danière, J. and Guillet, F.,
 \newblock \doi{https://doi.org/10.1016/j.ymssp.2004.05.001}.
 \newblock
   \urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0888327004000664}.
+
+\bibitem[{Bonomo \emph{et~al.}()Bonomo, Cordioli, Colaciti, Fonseca and
+  Simões}]{bonomo}
+Bonomo, L.A., Cordioli, J.A., Colaciti, A.K., Fonseca, J.V.N. and Simões,
+  L.G., ????
+\newblock \emph{Assessment of the Performance of Tonal-Broadband Decomposition
+  Algorithms for Propeller Noise}.
+\newblock \doi{10.2514/6.2023-3218}.
+\newblock \urlprefix\url{https://arc.aiaa.org/doi/abs/10.2514/6.2023-3218}.
 
 \bibitem[{McFadden(1987)}]{MCFADDEN1987173}
 McFadden, P., 1987.
