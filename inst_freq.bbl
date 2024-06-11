@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{6}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -52,6 +52,13 @@ Sharma, V. and Parey, A., 2016.
 \newblock \doi{https://doi.org/10.1016/j.measurement.2016.04.076}.
 \newblock
   \urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0263224116301567}.
+
+\bibitem[{Shin and Hammond(2008)}]{shin}
+Shin, K. and Hammond, J., 2008.
+\newblock \emph{Fundamentals of signal processing for sound and vibration
+  engineers}.
+\newblock Wiley.
+\newblock \urlprefix\url{https://eprints.soton.ac.uk/63688/}.
 
 \bibitem[{Urbanek \emph{et~al.}(2011)Urbanek, Barszcz, Sawalhi and
   Randall}]{Urbanek2011ComparisonOA}

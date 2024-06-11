@@ -80,19 +80,61 @@ In another approach,\cite{BONNARDOT2005766} proposed a tacholess technique of es
 This work is organized as follows: Section 2 presents the methodology of the phase demodulation technique, describing in details the physics behind the numerical calculation. Section 3 describes some setups of both numerical and experimental data and Section 4 compares the results with the tachometer real information, as well as evaluates the components of the resampled signal with Time Synchronous Averaging (TSA) techiniques. Finally, Section 5 concludes the consistency of the demodulation method.
 
 \section{METHODOLOGY}
+
+First, a widely used mathematical tool in the field of signal analysis is presented. 
+
+\subsection{The Hilbert Transform}
+
+Consider a system with an input $x(t)$ and a filter $h(t) = \frac{1}{\pi t}$. The output of the system is given by:
+\begin{equation}
+    y(t) = \hat{x}(t) =  h(t) * x(t) = \frac{1}{\pi t} * x(t)
+    \label{eq1}
+\end{equation}
+
+This convolution operation is called a Hilbert Transform \citep{shin}. Note that $h(t)$ is a non-causal filter with a singularity at $t=0$. The Hilbert transform is often referred to as a 90º phase shifter. For example, the Hilbert transform of $cos(\omega_{0} t)$ is $sin(\omega_{0} t)$, and that of $sin(\omega_{0} t)$ is $-cos(\omega_{0} t)$.
+
+The significance of the Hilbert transform is that it is used to form the so called "analytic signal" or "pre-envelope signal". An analytic signal is a complex time signal whose real part is the original signal $x(t)$ and where imaginary part is the Hilbert transform of $x(t)$, i.e. $\hat{x}(t)$. Thus, the analytic signal $a_{x} (t)$ is defined as:
+
+\begin{equation}
+    a_{x} (t) = x(t) + i\hat{x}(t) = A_{x}(t)e^{i\phi_{x}(t)}
+    \label{eq2}
+\end{equation}
+Where $A_{x}(t) = \sqrt{x^2 (t)+ \hat{x}^2 (t)}$ is the instantaneous amplitude, and $\phi_{x} = tan^{-1}(\hat{x}(t)/x(t))$ is the instantaneous phase.
+
+\subsection{The Demodulation Method}
 The primary method used for determining the instantaneous frequencies of a two-bladed propeller is the Demodulation Method \citep{BONNARDOT2005766}, a robust and effective procedure that allows for a detailed and precise analysis of dynamic variations over time.
 
 The techinique consists in 5 steps:
 
-\subsection{Band Inspection and Signal Filtering}
+\subsubsection{Band Inspection and Signal Filtering}
 
 In this step, a characteristic harmonic of the signal is selected, with this study focusing on the first Blade Pass Frequency (BPF), which represents the harmonic with the highest energy. Subsequently, through a detailed visual analysis of the spectrum, a band-pass filter is applied to precisely isolate the region corresponding to the shaft rotation harmonic, along with its controlled frequency variations. This approach ensures a focused and accurate examination of the relevant dynamic behaviors.
 
 It is important to add that the band of interest choice is primarily empirical, which results in testing band percentages and assess the performance of the ones who fit the problem the most. In this study we manage to compare multiple band percentages with the experimental instantaneous rotational frequency of the propeller.
 
-\subsection{Analytic Signal Estimation}
+\subsubsection{Analytic Signal Estimation}
 
+The analytic signal is estimated according to \ref{eq2}.
 
+\subsubsection{Phase Normalization}
+After the analytic signal is estimated, we shall extract the phase from one $\phi_{x} (t) = tan^{-1}(\hat{x}(t)/x(t))$. The phase is then normalized by dividing the phase by the order $m$ of the harmonic chosen in the first step. 
+\begin{equation}
+    \phi_{x,m} (t)=\frac{\phi_{x}(t)}{m} 
+    \label{eq3}
+\end{equation}
+
+After this normalization, the angular position of the propeller in radians in determined. In order to facilitate later mathematical manipulations, the phase is transformde into a first degree function to ensure the proportionality of the angular signal obtained. This can be done easily with a Numpy build-in function.
+
+\subsubsection{Phase Markers}
+The phase markers are defined to identify the moment where the propeller completes one rotation, which is when the index corresponds to $2\pi$ radians. This is achieved through a linear interpolation between time and phase. From these markers, it is possible to establish a list that records the complete rotations, thus allowing the rotation period to be determined.
+
+\subsubsection{Rotational Speed Profile}
+Finally, the speed profile can be traced based on the propeller rotation period, since:
+\begin{equation}
+    f = \frac{1}{T} = \frac{1}{t_{i+1}-t_{i}}
+    \label{eq4}
+\end{equation}
+Where the notation $t_{i}$ is the time instant $t$ where the phase marker $i$ is generated. 
 \bibliographystyle{abcm}
 \renewcommand{\refname}{}
 \bibliography{bibfile}

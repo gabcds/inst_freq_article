@@ -6,44 +6,44 @@ The style file: abcm.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: bibfile.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-You've used 5 entries,
+You've used 6 entries,
             3271 wiz_defined-function locations,
-            703 strings with 6714 characters,
-and the built_in function-call counts, 4161 in all, are:
-= -- 342
-> -- 154
-< -- 14
-+ -- 59
-- -- 54
-* -- 310
-:= -- 579
-add.period$ -- 26
-call.type$ -- 5
-change.case$ -- 43
-chr.to.int$ -- 5
-cite$ -- 5
-duplicate$ -- 325
-empty$ -- 298
-format.name$ -- 69
-if$ -- 862
+            709 strings with 6858 characters,
+and the built_in function-call counts, 4671 in all, are:
+= -- 382
+> -- 172
+< -- 15
++ -- 66
+- -- 60
+* -- 344
+:= -- 659
+add.period$ -- 30
+call.type$ -- 6
+change.case$ -- 49
+chr.to.int$ -- 6
+cite$ -- 6
+duplicate$ -- 365
+empty$ -- 341
+format.name$ -- 80
+if$ -- 964
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 63
-newline$ -- 46
-num.names$ -- 20
-pop$ -- 111
+missing$ -- 72
+newline$ -- 52
+num.names$ -- 24
+pop$ -- 134
 preamble$ -- 1
-purify$ -- 38
+purify$ -- 44
 quote$ -- 0
-skip$ -- 135
+skip$ -- 151
 stack$ -- 0
-substring$ -- 195
-swap$ -- 222
+substring$ -- 206
+swap$ -- 239
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 45
+type$ -- 51
 warning$ -- 0
-while$ -- 25
+while$ -- 28
 width$ -- 0
-write$ -- 96
+write$ -- 110
