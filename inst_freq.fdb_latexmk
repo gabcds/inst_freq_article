@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex inst_freq"] 1718132891.66943 "inst_freq.aux" "inst_freq.bbl" "inst_freq" 1718132893.39336 0
+["bibtex inst_freq"] 1718218914.97824 "inst_freq.aux" "inst_freq.bbl" "inst_freq" 1718219562.54942 0
   "./abcm.bst" 1714736608 35345 a07f4bf715e269d2d4681c3e67be08d6 ""
-  "./bibfile.bib" 1718131252 7782 f167615de4d055a12640df2394b68ff9 ""
-  "inst_freq.aux" 1718132892 2732 7cd6d20f0d51e1e72ad5c85464d93173 "pdflatex"
+  "./bibfile.bib" 1718218639 9413 71046e9f8adee63cf5d4b899ecba5de2 ""
+  "inst_freq.aux" 1718219561 2903 7f276f872de4e8f5556e51e39fdc874c "pdflatex"
   (generated)
   "inst_freq.bbl"
   "inst_freq.blg"
   (rewritten before read)
-["pdflatex"] 1718132892.0242 "c:/Users/User/Documents/GitHub/inst_freq_article/inst_freq.tex" "inst_freq.pdf" "inst_freq" 1718132893.39391 0
+["pdflatex"] 1718219561.17618 "c:/Users/User/Documents/GitHub/inst_freq_article/inst_freq.tex" "inst_freq.pdf" "inst_freq" 1718219562.5499 0
   "C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1715169368 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/User/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1714401641 20028 ce717b05dcd27b2b23808e77a7e95292 ""
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1714393703 24235534 c221b80f6b2794fe637e1ee768aaed8e ""
@@ -84,10 +84,10 @@
   "Figures/Encit_logo.png" 1714736608 186789 2ead7295981a6b77fe83a723d6f18e1e ""
   "Figures/abcm_logo.pdf" 1714736608 479850 e0d724e9c9fcfd67572c5f67ec7eec0f ""
   "abcm.sty" 1714736608 4249 b796be7b6230760d08d233b67a3677c5 ""
-  "c:/Users/User/Documents/GitHub/inst_freq_article/inst_freq.tex" 1718132889 15273 9f34290f8eeef0af9f19cf2b5512e2ee ""
-  "inst_freq.aux" 1718132892 2732 7cd6d20f0d51e1e72ad5c85464d93173 "pdflatex"
-  "inst_freq.bbl" 1718132891 3580 04656db4951ab0a4294ef10832e2954f "bibtex inst_freq"
-  "inst_freq.tex" 1718132889 15273 9f34290f8eeef0af9f19cf2b5512e2ee ""
+  "c:/Users/User/Documents/GitHub/inst_freq_article/inst_freq.tex" 1718219560 17135 9c2bab951f63232dffff021228ff2bd4 ""
+  "inst_freq.aux" 1718219561 2903 7f276f872de4e8f5556e51e39fdc874c "pdflatex"
+  "inst_freq.bbl" 1718218915 4044 dc293ec5c5f15ca4390327a7671d6579 "bibtex inst_freq"
+  "inst_freq.tex" 1718219560 17135 9c2bab951f63232dffff021228ff2bd4 ""
   (generated)
   "inst_freq.aux"
   "inst_freq.log"

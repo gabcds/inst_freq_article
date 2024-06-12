@@ -156,13 +156,26 @@ Finally, the synthetic signal is the sum of modulated harmonic signals, which ca
 Where N is the number of harmonics, $A_n$ is the harmonic amplitude, $\theta_i$ is the instantaneous phase angle defined in \ref{eq5}, $\phi_n$ is a random phase angle with a uniform distribution in the interval $[0,2\pi]$ and $w(t)$ is a Gaussian white noise that represents the broadband component of the propeller signal.
 
 \subsection{Experimental setup}
+The UFSC Isolated Propeller Test Rig is installed in the semi-anechoic chamber at the Laboratory of Vibration and Acoustics (LVA/UFSC) \citep{Augusto}. The propeller rig structure primarily consists of an aluminum frame mounted on a steel column bolted to the ground. A brushless DC motor, specifically the U3 KV700 model from T-Motor, is utilized to drive
+motion to the propellers, in conjunction with an Electronic Speed Controller (ESC), the ALPHA 40A, also from T-Motor.
+Rotational speed and angular position monitoring are facilitated by a digital laser indexed encoder, the EM1 from US
+Digital, with 50 cycles per revolution (CPR).
+The rotational speed of the propeller is controlled via an in-house closed-loop PID controller, implemented in
+Python3, utilizing a PXIe-6368 Multi-function DAQ as a hardware interface. The controller operates with an average
+update rate of 30 Hz.
 
+An array of microphones, oriented towards the ground, is positioned in line at a distance of 1.6 m from the steel column, parallel and 2 m away from the propeller axis. The array is arranged to cover a range from -45° to 45°, with 0° representing the rotor disk plane and positive angles measured above the rotation plane. Comprising nine GRAS 46AE 1/2” free-field microphones, the array includespositions at angular offsets of -27.5°, 0° and 27.5°, numbered 3, 5 and 7, respectively. The minimum ratio of the distance between microphones and the hub r to the propeller diameter d was r/d = 6.5, ensuring all microphones were positioned in the acoustic far field. 
+
+All signals are simultaneously acquired using custom software implemented in Python3, utilizing the nidaqmx
+library. The signals are acquired with PXIe-4499 modules by National Instruments, with a sampling frequency of 51.2 kHz during 30 s runs for each test condition. \citep{Augusto}
 \section{Results}
 \subsection{Synthetic signal}
 \subsection{Experimental signal}
 Regarding the selection of the propeller signal frequency band, as mentioned in Section 2, the characteristic frequency of the harmonic given by the first BPF was chosen as the central frequency, characterized as the tone with the highest energy. The frequency band variation was 0.1\%, 0.5\%, 0.75\%, 1\%, 1.2\%, 1.5\%, 1.75\%, 2\%, and 3\% of this frequency, both above and below.
 
-Below 0.1\%, it was observed that the instantaneous frequency variation was cut off due to the narrow band in the spectrum, and above 3\%, the result began to diverge due to the excessively wide band in the characteristic tone
+Below 0.1\%, it was observed that the instantaneous frequency variation was cut off due to the narrow band in the spectrum, and above 3\%, the result began to diverge due to the excessively wide band in the characteristic tone.
+
+
 \section{Conclusion}
 
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{8}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -7,6 +7,14 @@
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[{Beck \emph{et~al.}()Beck, Cordioli, Bonomo, Fonseca, Simões,
+  Tourinho, Casalino, Ragni and Avallone}]{Augusto}
+Beck, A.B., Cordioli, J.A., Bonomo, L.A., Fonseca, J.V.N., Simões, L.G.,
+  Tourinho, A.M., Casalino, D., Ragni, D. and Avallone, F., ????
+\newblock \emph{Comparative Assessment of Isolated Propeller Noise Test Rigs}.
+\newblock \doi{10.2514/6.2024-3323}.
+\newblock \urlprefix\url{https://arc.aiaa.org/doi/abs/10.2514/6.2024-3323}.
 
 \bibitem[{Bonnardot \emph{et~al.}(2005)Bonnardot, {El Badaoui}, Randall,
   Danière and Guillet}]{BONNARDOT2005766}
