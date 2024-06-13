@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: inst_freq.aux
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+The style file: abcm.bst
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+Database file #1: bibfile.bib
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Warning--empty year in Augusto; set to ????
+Warning--missing publisher in Augusto
+Warning--empty chapter and pages in Augusto
+Warning--empty year in bonomo; set to ????
+Warning--missing publisher in bonomo
+Warning--empty chapter and pages in bonomo
+You've used 8 entries,
+            3271 wiz_defined-function locations,
+            722 strings with 7540 characters,
+and the built_in function-call counts, 6267 in all, are:
+= -- 482
+> -- 288
+< -- 15
++ -- 110
+- -- 102
+* -- 492
+:= -- 913
+add.period$ -- 38
+call.type$ -- 8
+change.case$ -- 71
+chr.to.int$ -- 8
+cite$ -- 14
+duplicate$ -- 469
+empty$ -- 439
+format.name$ -- 128
+if$ -- 1260
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 102
+newline$ -- 64
+num.names$ -- 32
+pop$ -- 212
+preamble$ -- 1
+purify$ -- 66
+quote$ -- 0
+skip$ -- 173
+stack$ -- 0
+substring$ -- 228
+swap$ -- 297
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 63
+warning$ -- 6
+while$ -- 34
+width$ -- 0
+write$ -- 138
+(There were 6 warnings)

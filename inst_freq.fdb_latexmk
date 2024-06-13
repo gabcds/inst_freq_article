@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex inst_freq"] 1718218914.97824 "inst_freq.aux" "inst_freq.bbl" "inst_freq" 1718219562.54942 0
+["bibtex inst_freq"] 1718292396.46818 "inst_freq.aux" "inst_freq.bbl" "inst_freq" 1718292398.25944 0
   "./abcm.bst" 1714736608 35345 a07f4bf715e269d2d4681c3e67be08d6 ""
   "./bibfile.bib" 1718218639 9413 71046e9f8adee63cf5d4b899ecba5de2 ""
-  "inst_freq.aux" 1718219561 2903 7f276f872de4e8f5556e51e39fdc874c "pdflatex"
+  "inst_freq.aux" 1718292397 3235 bb3c5912eab8dbec34438d6d640643d9 "pdflatex"
   (generated)
   "inst_freq.bbl"
   "inst_freq.blg"
   (rewritten before read)
-["pdflatex"] 1718219561.17618 "c:/Users/User/Documents/GitHub/inst_freq_article/inst_freq.tex" "inst_freq.pdf" "inst_freq" 1718219562.5499 0
+["pdflatex"] 1718292396.71315 "c:/Users/User/Documents/GitHub/inst_freq_article/inst_freq.tex" "inst_freq.pdf" "inst_freq" 1718292398.25992 0
   "C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1715169368 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/User/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1714401641 20028 ce717b05dcd27b2b23808e77a7e95292 ""
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1714393703 24235534 c221b80f6b2794fe637e1ee768aaed8e ""
@@ -82,12 +82,14 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1700599895 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "Figures/Encit_logo.png" 1714736608 186789 2ead7295981a6b77fe83a723d6f18e1e ""
+  "Figures/UFSC_propeller_test_rig.png" 1718218992 512996 06dce3775da3ffd73d4276901d4ab03c ""
   "Figures/abcm_logo.pdf" 1714736608 479850 e0d724e9c9fcfd67572c5f67ec7eec0f ""
+  "Figures/ufsc_microphone_array.png" 1718219519 41454 df8b9dc5e6ef86be9095317344528d6c ""
   "abcm.sty" 1714736608 4249 b796be7b6230760d08d233b67a3677c5 ""
-  "c:/Users/User/Documents/GitHub/inst_freq_article/inst_freq.tex" 1718219560 17135 9c2bab951f63232dffff021228ff2bd4 ""
-  "inst_freq.aux" 1718219561 2903 7f276f872de4e8f5556e51e39fdc874c "pdflatex"
-  "inst_freq.bbl" 1718218915 4044 dc293ec5c5f15ca4390327a7671d6579 "bibtex inst_freq"
-  "inst_freq.tex" 1718219560 17135 9c2bab951f63232dffff021228ff2bd4 ""
+  "c:/Users/User/Documents/GitHub/inst_freq_article/inst_freq.tex" 1718292394 17638 c9660226ede979e55606b00ab3686bb5 ""
+  "inst_freq.aux" 1718292397 3235 bb3c5912eab8dbec34438d6d640643d9 "pdflatex"
+  "inst_freq.bbl" 1718292396 4044 dc293ec5c5f15ca4390327a7671d6579 "bibtex inst_freq"
+  "inst_freq.tex" 1718292394 17638 c9660226ede979e55606b00ab3686bb5 ""
   (generated)
   "inst_freq.aux"
   "inst_freq.log"

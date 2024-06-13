@@ -24,7 +24,7 @@ Noise Signal Demodulation for Estimating Drone Propeller Rotational Speed} %(XXX
 \institution{mateus.grassano@polo.ufsc.br} \\
 \\
 \authors{Lucas Bonomo Araújo} \\
-\authors{Julio Codiolo} \\ 
+\authors{Julio Codioli} \\ 
 \authors{Racquel Knust Domingues} \\
 \authors{Augusto Barth Beck} \\ 
 \institution{Federal Univerisity of Santa Catarina, UFSC} \\ %(If all authors are from the same institution, the "Institution and address" must be placed only once.)
@@ -164,10 +164,22 @@ The rotational speed of the propeller is controlled via an in-house closed-loop 
 Python3, utilizing a PXIe-6368 Multi-function DAQ as a hardware interface. The controller operates with an average
 update rate of 30 Hz.
 
-An array of microphones, oriented towards the ground, is positioned in line at a distance of 1.6 m from the steel column, parallel and 2 m away from the propeller axis. The array is arranged to cover a range from -45° to 45°, with 0° representing the rotor disk plane and positive angles measured above the rotation plane. Comprising nine GRAS 46AE 1/2” free-field microphones, the array includespositions at angular offsets of -27.5°, 0° and 27.5°, numbered 3, 5 and 7, respectively. The minimum ratio of the distance between microphones and the hub r to the propeller diameter d was r/d = 6.5, ensuring all microphones were positioned in the acoustic far field. 
+An array of microphones, oriented towards the ground, is positioned in line at a distance of 1.6 m from the steel column, parallel and 2 m away from the propeller axis. The array is arranged to cover a range from -45° to 45°, with 0° representing the rotor disk plane and positive angles measured above the rotation plane. Comprising nine GRAS 46AE 1/2” free-field microphones, the array includespositions at angular offsets of -27.5°, 0° and 27.5°, numbered 3, 5 and 7, respectively. The minimum ratio of the distance between microphones and the hub r to the propeller diameter d was r/d = 6.5, ensuring all microphones were positioned in the acoustic far field. The microphone array is presented in Fig.1.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[angle=0, scale=0.320]{Figures/ufsc_microphone_array.png}
+    \caption{UFSC test rig microphone array displacement}
+    \label{fig1}
+    \end{figure}
 
 All signals are simultaneously acquired using custom software implemented in Python3, utilizing the nidaqmx
-library. The signals are acquired with PXIe-4499 modules by National Instruments, with a sampling frequency of 51.2 kHz during 30 s runs for each test condition. \citep{Augusto}
+library. The signals are acquired with PXIe-4499 modules by National Instruments, with a sampling frequency of 51.2 kHz during 30 s runs for each test condition. \citep{Augusto}. The overview of the propeller mounted is shown in Fig.2.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[angle=0, scale=0.320]{Figures/UFSC_propeller_test_rig.png}
+    \caption{UFSC propeller test rig}
+    \label{fig2}
+    \end{figure}
 \section{Results}
 \subsection{Synthetic signal}
 \subsection{Experimental signal}
