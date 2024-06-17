@@ -107,8 +107,40 @@ The primary method used for determining the instantaneous frequencies of a two-b
 
 The technique consists of five main steps, each with its own peculiarities and conditions for optimal performance. This will be discussed in detail in Section 5, where the results will be presented.
 
-Firtly, a characteristic harmonic of the signal is selected, with this study focusing on the first Blade Pass Frequency (BPF), which represents the harmonic with the highest energy. Subsequently, through a detailed visual analysis of the spectrum, a band-pass filter is applied to precisely isolate the region corresponding to the shaft rotation harmonic, along with its controlled frequency variations. This approach ensures a focused and accurate examination of the relevant dynamic behaviors.
-
+Firtly, a characteristic harmonic of the signal is selected, with this study focusing on the first Blade Pass Frequency (BPF), which represents the harmonic with the highest energy. Subsequently, through a detailed visual analysis of the spectrum, a band-pass filter is applied to precisely isolate the region corresponding to the shaft rotation harmonic, along with its controlled frequency variations. This approach ensures a focused and accurate examination of the relevant dynamic behaviors. Fig. 1 demonstrated the frequency band selection for the filtering.
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.5\textwidth}
+    \label{fig1a}
+    \centering
+    \includegraphics[width=0.70\linewidth]{Figures/spectra_band_1.png}
+    \caption{1\% band}
+    
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+    \label{fig1b}
+    \centering
+    \includegraphics[width=0.70\linewidth]{Figures/spectra_band_1.5.png}
+    \caption{1.5\% band}
+    
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+    \label{fig1c}
+    \centering
+    \includegraphics[width=0.70\linewidth]{Figures/spectra_band_1.75.png}
+    \caption{1.75\%}
+    
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+    \label{fig1d}
+    \centering
+    \includegraphics[width=0.70\linewidth]{Figures/spectra_band_3.png}
+    \caption{3\% band}
+    
+\end{subfigure}%
+\caption{Band analysis with diferent percentages}
+\label{fig1}
+\end{figure}
 It is important to add that the band of interest choice is primarily empirical, which results in testing band percentages and assess the performance of the ones who fit the problem the most. In this study we manage to compare multiple band percentages with the experimental instantaneous rotational frequency of the propeller. 
 
 Once the frequency band of the characteristic harmonic is selected, one may estimate the analytic signal according to \ref{eq2}, so that is possible to extract the analitical parameters of interest, such as the instantaneous phase of the propeller signal.
@@ -164,21 +196,21 @@ The rotational speed of the propeller is controlled via an in-house closed-loop 
 Python3, utilizing a PXIe-6368 Multi-function DAQ as a hardware interface. The controller operates with an average
 update rate of 30 Hz.
 
-An array of microphones, oriented towards the ground, is positioned in line at a distance of 1.6 m from the steel column, parallel and 2 m away from the propeller axis. The array is arranged to cover a range from -45° to 45°, with 0° representing the rotor disk plane and positive angles measured above the rotation plane. Comprising nine GRAS 46AE 1/2” free-field microphones, the array includespositions at angular offsets of -27.5°, 0° and 27.5°, numbered 3, 5 and 7, respectively. The minimum ratio of the distance between microphones and the hub r to the propeller diameter d was r/d = 6.5, ensuring all microphones were positioned in the acoustic far field. The microphone array is presented in Fig.1.
+An array of microphones, oriented towards the ground, is positioned in line at a distance of 1.6 m from the steel column, parallel and 2 m away from the propeller axis. The array is arranged to cover a range from -45° to 45°, with 0° representing the rotor disk plane and positive angles measured above the rotation plane. Comprising nine GRAS 46AE 1/2” free-field microphones, the array includespositions at angular offsets of -27.5°, 0° and 27.5°, numbered 3, 5 and 7, respectively. The minimum ratio of the distance between microphones and the hub r to the propeller diameter d was r/d = 6.5, ensuring all microphones were positioned in the acoustic far field. The microphone array is presented in Fig.2.
 \begin{figure}[h!]
     \centering
     \includegraphics[angle=0, scale=0.320]{Figures/ufsc_microphone_array.png}
     \caption{UFSC test rig microphone array displacement}
-    \label{fig1}
+    \label{fig2}
     \end{figure}
 
 All signals are simultaneously acquired using custom software implemented in Python3, utilizing the nidaqmx
-library. The signals are acquired with PXIe-4499 modules by National Instruments, with a sampling frequency of 51.2 kHz during 30 s runs for each test condition. \citep{Augusto}. The overview of the propeller mounted is shown in Fig.2.
+library. The signals are acquired with PXIe-4499 modules by National Instruments, with a sampling frequency of 51.2 kHz during 30 s runs for each test condition. \citep{Augusto}. The overview of the propeller mounted is shown in Fig.3.
 \begin{figure}[h!]
     \centering
     \includegraphics[angle=0, scale=0.320]{Figures/UFSC_propeller_test_rig.png}
     \caption{UFSC propeller test rig}
-    \label{fig2}
+    \label{fig3}
     \end{figure}
 \section{Results}
 \subsection{Synthetic signal}
