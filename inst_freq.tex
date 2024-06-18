@@ -6,6 +6,8 @@
 
 \documentclass[10pt,fleqn,a4paper,twoside]{article}
 \usepackage{abcm}
+\usepackage{graphicx}
+\usepackage{subcaption}
 \def\shortauthor{F. Author, S. Author and T. Author (update this heading accordingly)}
 \def\shorttitle{Paper Short Title (First Letters Uppercase, make sure it fits in one line)}
 
@@ -108,39 +110,38 @@ The primary method used for determining the instantaneous frequencies of a two-b
 The technique consists of five main steps, each with its own peculiarities and conditions for optimal performance. This will be discussed in detail in Section 5, where the results will be presented.
 
 Firtly, a characteristic harmonic of the signal is selected, with this study focusing on the first Blade Pass Frequency (BPF), which represents the harmonic with the highest energy. Subsequently, through a detailed visual analysis of the spectrum, a band-pass filter is applied to precisely isolate the region corresponding to the shaft rotation harmonic, along with its controlled frequency variations. This approach ensures a focused and accurate examination of the relevant dynamic behaviors. Fig. 1 demonstrated the frequency band selection for the filtering.
-\begin{figure}[h]
-\centering
-\begin{subfigure}{.5\textwidth}
-    \label{fig1a}
+\begin{figure}
     \centering
-    \includegraphics[width=0.70\linewidth]{Figures/spectra_band_1.png}
-    \caption{1\% band}
-    
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-    \label{fig1b}
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/spectra_band_1.png}
+        \caption{Band selection 1\%}
+        \label{fig:first}
+    \end{subfigure}
+    \hfill
     \centering
-    \includegraphics[width=0.70\linewidth]{Figures/spectra_band_1.5.png}
-    \caption{1.5\% band}
-    
-\end{subfigure}
-\begin{subfigure}{.5\textwidth}
-    \label{fig1c}
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/spectra_band_1.5.png}
+        \caption{Band selection 1.5\%}
+        \label{fig:second}
+    \end{subfigure}
+    \hfill
     \centering
-    \includegraphics[width=0.70\linewidth]{Figures/spectra_band_1.75.png}
-    \caption{1.75\%}
-    
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-    \label{fig1d}
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/spectra_band_1.75.png}
+        \caption{Band selection 1.75\%}
+        \label{fig:third}
+    \end{subfigure}
     \centering
-    \includegraphics[width=0.70\linewidth]{Figures/spectra_band_3.png}
-    \caption{3\% band}
-    
-\end{subfigure}%
-\caption{Band analysis with diferent percentages}
-\label{fig1}
-\end{figure}
+    \hfill
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/spectra_band_3.png}
+        \caption{Band selection 3\%}
+        \label{fig:third}
+    \end{subfigure}
+            
+    \caption{Band selection with diferent percentages.}
+    \label{fig:figures}
+    \end{figure}
 It is important to add that the band of interest choice is primarily empirical, which results in testing band percentages and assess the performance of the ones who fit the problem the most. In this study we manage to compare multiple band percentages with the experimental instantaneous rotational frequency of the propeller. 
 
 Once the frequency band of the characteristic harmonic is selected, one may estimate the analytic signal according to \ref{eq2}, so that is possible to extract the analitical parameters of interest, such as the instantaneous phase of the propeller signal.
@@ -196,7 +197,9 @@ The rotational speed of the propeller is controlled via an in-house closed-loop 
 Python3, utilizing a PXIe-6368 Multi-function DAQ as a hardware interface. The controller operates with an average
 update rate of 30 Hz.
 
+
 An array of microphones, oriented towards the ground, is positioned in line at a distance of 1.6 m from the steel column, parallel and 2 m away from the propeller axis. The array is arranged to cover a range from -45° to 45°, with 0° representing the rotor disk plane and positive angles measured above the rotation plane. Comprising nine GRAS 46AE 1/2” free-field microphones, the array includespositions at angular offsets of -27.5°, 0° and 27.5°, numbered 3, 5 and 7, respectively. The minimum ratio of the distance between microphones and the hub r to the propeller diameter d was r/d = 6.5, ensuring all microphones were positioned in the acoustic far field. The microphone array is presented in Fig.2.
+\clearpage
 \begin{figure}[h!]
     \centering
     \includegraphics[angle=0, scale=0.320]{Figures/ufsc_microphone_array.png}
@@ -217,8 +220,68 @@ library. The signals are acquired with PXIe-4499 modules by National Instruments
 \subsection{Experimental signal}
 Regarding the selection of the propeller signal frequency band, as mentioned in Section 2, the characteristic frequency of the harmonic given by the first BPF was chosen as the central frequency, characterized as the tone with the highest energy. The frequency band variation was 0.1\%, 0.5\%, 0.75\%, 1\%, 1.2\%, 1.5\%, 1.75\%, 2\%, and 3\% of this frequency, both above and below.
 
-Below 0.1\%, it was observed that the instantaneous frequency variation was cut off due to the narrow band in the spectrum, and above 3\%, the result began to diverge due to the excessively wide band in the characteristic tone.
+Below 0.1\%, it was observed that the instantaneous frequency variation was cut off due to the narrow band in the spectrum, and above 3\%, the result began to diverge due to the excessively wide band in the characteristic tone. In Fig. 4 is shown the results given by analyzing diferent frequency bands from the experimental signal of the microphone 1.
 
+\begin{figure}
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_0.1.png}
+        \caption{Velocity profile band 1\%}
+        \label{fig:first}
+    \end{subfigure}
+    \hfill
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_0.5.png}
+        \caption{Velocity profile band 1.5\%}
+        \label{fig:second}
+    \end{subfigure}
+    \hfill
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_0.75.png}
+        \caption{Velocity profile band 0.75\%}
+        \label{fig:third}
+    \end{subfigure}
+    \centering
+    \hfill
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_1.png}
+        \caption{Velocity profile band 1\%}
+        \label{fig:fourth}
+    \end{subfigure}
+    \centering
+    \hfill
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_1.2.png}
+        \caption{Velocity profile band 1.2\%}
+        \label{fig:fifth}
+    \end{subfigure}
+    \centering
+    \hfill
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_1.5.png}
+        \caption{Velocity profile band 1.5\%}
+        \label{fig:sixth}
+    \end{subfigure}
+    \centering
+    \hfill
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_1.75.png}
+        \caption{Velocity profile band 1.75\%}
+        \label{fig:seventh}
+    \end{subfigure}
+    \centering
+    \hfill 
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_3.png}
+        \caption{Velocity profile band 3\%}
+        \label{fig:eigth}
+    \end{subfigure}
+            
+    \caption{RPM analysis diferent frequency bands from microphone 1.}
+    \label{fig:figures}
+    \end{figure}
 
 \section{Conclusion}
 
