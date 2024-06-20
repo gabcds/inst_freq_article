@@ -218,15 +218,15 @@ library. The signals are acquired with PXIe-4499 modules by National Instruments
 \section{Results}
 \subsection{Synthetic signal}
 \subsection{Experimental signal}
-Regarding the selection of the propeller signal frequency band, as mentioned in Section 2, the characteristic frequency of the harmonic given by the first BPF was chosen as the central frequency, characterized as the tone with the highest energy. The frequency band variation was 0.1\%, 0.5\%, 0.75\%, 1\%, 1.2\%, 1.5\%, 1.75\%, 2\%, and 3\% of this frequency, both above and below.
+Regarding the selection of the propeller signal frequency band, as mentioned in Section 2, the characteristic frequency of the harmonic given by the first BPF was chosen as the central frequency, characterized as the tone with the highest energy. The frequency band variation was 0.1\%, 0.5\%, 0.75\%, 1\%, 1.2\%, 1.5\%, 1.75\%, 2\%, and 3\% of this frequency, both above and below. In Fig. 4 is shown the results given by analyzing diferent frequency bands from the experimental signal of the microphone 1.
 
-Below 0.1\%, it was observed that the instantaneous frequency variation was cut off due to the narrow band in the spectrum, and above 3\%, the result began to diverge due to the excessively wide band in the characteristic tone. In Fig. 4 is shown the results given by analyzing diferent frequency bands from the experimental signal of the microphone 1.
+Below 0.1\%, it was observed that the instantaneous frequency variation was cut off due to the narrow band in the spectrum, and above 3\%, the result began to diverge due to the excessively wide band in the characteristic tone. 
 
 \begin{figure}
     \centering
     \begin{subfigure}{0.4\textwidth}
         \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_0.1.png}
-        \caption{Velocity profile band 1\%}
+        \caption{Velocity profile band 0.1\%}
         \label{fig:first}
     \end{subfigure}
     \hfill
@@ -284,6 +284,12 @@ Below 0.1\%, it was observed that the instantaneous frequency variation was cut 
     \end{figure}
 
 \section{Conclusion}
+In Sec. 1 the current literature approaches for the problem stated. Sec. 2 presented the methodology of the selected technique to extract the instantaneous frequency of a shaft, but applied to a propeller signal, the called Demodulation method. In Sec. 3 is presented how the propeller data is gattered, wheter is a synthetic or experimental signal, Sec. 4 shows the results from either of the two data types. In the current section, we provide the conclusion, the feasibility or accuracity of the method exposed.
+
+
+Below 0.1\%, it was observed that the instantaneous frequency variation was cut off due to the narrow band in the spectrum, and above 3\%, the result began to diverge due to the excessively wide band in the characteristic tone. 
+
+
 
 
 \bibliographystyle{abcm}
