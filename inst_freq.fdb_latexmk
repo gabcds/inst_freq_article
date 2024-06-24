@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex inst_freq"] 1718920721.02348 "inst_freq.aux" "inst_freq.bbl" "inst_freq" 1718920771.83184 0
+["bibtex inst_freq"] 1719237102.84944 "inst_freq.aux" "inst_freq.bbl" "inst_freq" 1719237113.3732 0
   "./abcm.bst" 1714675027 35345 a07f4bf715e269d2d4681c3e67be08d6 ""
   "./bibfile.bib" 1718919026 9413 71046e9f8adee63cf5d4b899ecba5de2 ""
-  "inst_freq.aux" 1718920770 4586 19c2c4ecd279b7f498b9a70c85bc5f89 "pdflatex"
+  "inst_freq.aux" 1719237112 6228 cdee4cafa630f488dae864d48c4c0138 "pdflatex"
   (generated)
   "inst_freq.bbl"
   "inst_freq.blg"
   (rewritten before read)
-["pdflatex"] 1718920764.8553 "c:/Users/gabco/OneDrive/Documentos/GitHub/inst_freq_article/inst_freq.tex" "inst_freq.pdf" "inst_freq" 1718920771.83268 0
+["pdflatex"] 1719237103.23713 "c:/Users/gabco/OneDrive/Documentos/GitHub/inst_freq_article/inst_freq.tex" "inst_freq.pdf" "inst_freq" 1719237113.37397 0
   "C:/Users/gabco/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1718919040 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/gabco/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1714674443 20028 a3b6b417d069715230eb223d1dfcec39 ""
   "C:/Users/gabco/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1714674900 24236005 48a03f22180a097fd4306ac01e8ab7cd ""
@@ -95,16 +95,32 @@
   "Figures/rpm_analysis_mic0_band_1.75.png" 1718919026 279548 7f2d8b596d9f68c1b533db731f6f175b ""
   "Figures/rpm_analysis_mic0_band_1.png" 1718919026 238312 d5cda43684dbec6248438f0762febb32 ""
   "Figures/rpm_analysis_mic0_band_3.png" 1718919026 316800 d5868aa13e98b97063d603bd0713fd8f ""
+  "Figures/rpm_analysis_mic4_band_0.1.png" 1716486813 179454 d2e050085161f6080d9e4c330778f6d5 ""
+  "Figures/rpm_analysis_mic4_band_0.5.png" 1716486813 198831 58d5284da75196edcfa657127a042c64 ""
+  "Figures/rpm_analysis_mic4_band_0.75.png" 1716486813 214584 1e8b2f3c55bc79dc19173253728256d1 ""
+  "Figures/rpm_analysis_mic4_band_1.2.png" 1716486813 233838 5451e7da5358e0b7ea2940043782f3e8 ""
+  "Figures/rpm_analysis_mic4_band_1.5.png" 1716486813 243082 ed68e89540da0486ab5e17c8f64ca349 ""
+  "Figures/rpm_analysis_mic4_band_1.75.png" 1716486813 249552 d96382e69ab403b80abc9453ffc17210 ""
+  "Figures/rpm_analysis_mic4_band_1.png" 1716486813 225224 5273bb4309551cace38615962fcb8a9a ""
+  "Figures/rpm_analysis_mic4_band_3.png" 1716486813 263827 76835ed585307f0e369ce4f192ff1e8e ""
+  "Figures/rpm_analysis_mic8_band_0.1.png" 1716486813 178665 07b1119debdeb27cd36f18c11fdb8f46 ""
+  "Figures/rpm_analysis_mic8_band_0.5.png" 1716486813 203643 4be7b66e236bc48e74166c238b56334b ""
+  "Figures/rpm_analysis_mic8_band_0.75.png" 1716486813 220732 e039053660c842ca1a1db72cc63f5284 ""
+  "Figures/rpm_analysis_mic8_band_1.2.png" 1716486813 246767 68122727df68affe68867c9a8dc28f03 ""
+  "Figures/rpm_analysis_mic8_band_1.5.png" 1716486813 261986 1d4dab46a6aade2c32a8d67fd7e2a189 ""
+  "Figures/rpm_analysis_mic8_band_1.75.png" 1716486813 275079 3ab48de5ed5c7cedac5dfb61bf92f729 ""
+  "Figures/rpm_analysis_mic8_band_1.png" 1716486813 234809 4d33113a0efe73d03ee557cd29b438ef ""
+  "Figures/rpm_analysis_mic8_band_3.png" 1716486813 310364 2c30340cab8b260f37516aacc0ba4ab9 ""
   "Figures/spectra_band_1.5.png" 1718919026 60390 e39b6373ae62953e1fb48c1bffca1b4a ""
   "Figures/spectra_band_1.75.png" 1718919026 60634 df3749e8a4d09361df72ecaaa361efcd ""
   "Figures/spectra_band_1.png" 1718919026 59238 86bf036061e65bd144585f602758b63c ""
   "Figures/spectra_band_3.png" 1718919026 59632 ca5fc7acbea5e0d5ec872a4438da7402 ""
   "Figures/ufsc_microphone_array.png" 1718919026 41454 df8b9dc5e6ef86be9095317344528d6c ""
   "abcm.sty" 1714675027 4249 b796be7b6230760d08d233b67a3677c5 ""
-  "c:/Users/gabco/OneDrive/Documentos/GitHub/inst_freq_article/inst_freq.tex" 1718920763 21764 57db5ce60f7ece801e3ddfe6bf284cd2 ""
-  "inst_freq.aux" 1718920770 4586 19c2c4ecd279b7f498b9a70c85bc5f89 "pdflatex"
-  "inst_freq.bbl" 1718920721 4044 dc293ec5c5f15ca4390327a7671d6579 "bibtex inst_freq"
-  "inst_freq.tex" 1718920763 21764 57db5ce60f7ece801e3ddfe6bf284cd2 ""
+  "c:/Users/gabco/OneDrive/Documentos/GitHub/inst_freq_article/inst_freq.tex" 1719237091 26986 4c9769313d2693a16d975d561d4a0a80 ""
+  "inst_freq.aux" 1719237112 6228 cdee4cafa630f488dae864d48c4c0138 "pdflatex"
+  "inst_freq.bbl" 1719237103 4044 dc293ec5c5f15ca4390327a7671d6579 "bibtex inst_freq"
+  "inst_freq.tex" 1719237091 26986 4c9769313d2693a16d975d561d4a0a80 ""
   (generated)
   "inst_freq.aux"
   "inst_freq.log"

@@ -218,9 +218,9 @@ library. The signals are acquired with PXIe-4499 modules by National Instruments
 \section{Results}
 \subsection{Synthetic signal}
 \subsection{Experimental signal}
-Regarding the selection of the propeller signal frequency band, as mentioned in Section 2, the characteristic frequency of the harmonic given by the first BPF was chosen as the central frequency, characterized as the tone with the highest energy. The frequency band variation was 0.1\%, 0.5\%, 0.75\%, 1\%, 1.2\%, 1.5\%, 1.75\%, 2\%, and 3\% of this frequency, both above and below. In Fig. 4 is shown the results given by analyzing diferent frequency bands from the experimental signal of the microphone 1.
+Regarding the selection of the propeller signal frequency band, as mentioned in Section 2, the characteristic frequency of the harmonic given by the first BPF was chosen as the central frequency, characterized as the tone with the highest energy. The frequency band variation was 0.1\%, 0.5\%, 0.75\%, 1\%, 1.2\%, 1.5\%, 1.75\%, 2\%, and 3\% of this frequency, both above and below. 
 
-Below 0.1\%, it was observed that the instantaneous frequency variation was cut off due to the narrow band in the spectrum, and above 3\%, the result began to diverge due to the excessively wide band in the characteristic tone. 
+In Fig. 4, 5 and 6 is shown the results given by analyzing diferent frequency bands from the experimental signal of the microphones 1, 5 and 9 of the experimental setup, which correspond to the hard right, hard left and the middle positions, respectively.
 
 \begin{figure}
     \centering
@@ -233,7 +233,7 @@ Below 0.1\%, it was observed that the instantaneous frequency variation was cut 
     \centering
     \begin{subfigure}{0.4\textwidth}
         \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_0.5.png}
-        \caption{Velocity profile band 1.5\%}
+        \caption{Velocity profile band 0.5\%}
         \label{fig:second}
     \end{subfigure}
     \hfill
@@ -279,16 +279,139 @@ Below 0.1\%, it was observed that the instantaneous frequency variation was cut 
         \label{fig:eigth}
     \end{subfigure}
             
-    \caption{RPM analysis diferent frequency bands from microphone 1.}
+    \caption{RPM analysis diferent frequency bands from microphone 1 (hard right).}
     \label{fig:figures}
     \end{figure}
 
+    %mic 5 
+    \begin{figure}
+        \centering
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic4_band_0.1.png}
+            \caption{Velocity profile band 0.1\%}
+            \label{fig:first}
+        \end{subfigure}
+        \hfill
+        \centering
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic4_band_0.5.png}
+            \caption{Velocity profile band 0.5\%}
+            \label{fig:second}
+        \end{subfigure}
+        \hfill
+        \centering
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic4_band_0.75.png}
+            \caption{Velocity profile band 0.75\%}
+            \label{fig:third}
+        \end{subfigure}
+        \centering
+        \hfill
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic4_band_1.png}
+            \caption{Velocity profile band 1\%}
+            \label{fig:fourth}
+        \end{subfigure}
+        \centering
+        \hfill
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic4_band_1.2.png}
+            \caption{Velocity profile band 1.2\%}
+            \label{fig:fifth}
+        \end{subfigure}
+        \centering
+        \hfill
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic4_band_1.5.png}
+            \caption{Velocity profile band 1.5\%}
+            \label{fig:sixth}
+        \end{subfigure}
+        \centering
+        \hfill
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic4_band_1.75.png}
+            \caption{Velocity profile band 1.75\%}
+            \label{fig:seventh}
+        \end{subfigure}
+        \centering
+        \hfill 
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic4_band_3.png}
+            \caption{Velocity profile band 3\%}
+            \label{fig:eigth}
+        \end{subfigure}
+                
+        \caption{RPM analysis diferent frequency bands from microphone 5 (middle).}
+        \label{fig:figures}
+        \end{figure}
+
+    %mic 9
+    \begin{figure}
+        \centering
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic8_band_0.1.png}
+            \caption{Velocity profile band 0.1\%}
+            \label{fig:first}
+        \end{subfigure}
+        \hfill
+        \centering
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic8_band_0.5.png}
+            \caption{Velocity profile band 0.5\%}
+            \label{fig:second}
+        \end{subfigure}
+        \hfill
+        \centering
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic8_band_0.75.png}
+            \caption{Velocity profile band 0.75\%}
+            \label{fig:third}
+        \end{subfigure}
+        \centering
+        \hfill
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic8_band_1.png}
+            \caption{Velocity profile band 1\%}
+            \label{fig:fourth}
+        \end{subfigure}
+        \centering
+        \hfill
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic8_band_1.2.png}
+            \caption{Velocity profile band 1.2\%}
+            \label{fig:fifth}
+        \end{subfigure}
+        \centering
+        \hfill
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic8_band_1.5.png}
+            \caption{Velocity profile band 1.5\%}
+            \label{fig:sixth}
+        \end{subfigure}
+        \centering
+        \hfill
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic8_band_1.75.png}
+            \caption{Velocity profile band 1.75\%}
+            \label{fig:seventh}
+        \end{subfigure}
+        \centering
+        \hfill 
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic8_band_3.png}
+            \caption{Velocity profile band 3\%}
+            \label{fig:eigth}
+        \end{subfigure}
+                
+        \caption{RPM analysis diferent frequency bands from microphone 9 (hard left).}
+        \label{fig:figures}
+        \end{figure}
 \section{Conclusion}
 In Sec. 1 the current literature approaches for the problem stated. Sec. 2 presented the methodology of the selected technique to extract the instantaneous frequency of a shaft, but applied to a propeller signal, the called Demodulation method. In Sec. 3 is presented how the propeller data is gattered, wheter is a synthetic or experimental signal, Sec. 4 shows the results from either of the two data types. In the current section, we provide the conclusion, the feasibility or accuracity of the method exposed.
 
+After a visual inspection of the experimental results, it can be conclude that the band inspection is a primal parameter in order to obtain a great performance of the techinique. For every microphone analysed,below 0.1\%, it was observed that the instantaneous frequency variation was cut off due to the excessively narrow band in the spectrum, and above 3\%, the result began to diverge due to the excessively wide band in the characteristic tone. 
 
-Below 0.1\%, it was observed that the instantaneous frequency variation was cut off due to the narrow band in the spectrum, and above 3\%, the result began to diverge due to the excessively wide band in the characteristic tone. 
-
+The better fitted band choices were the ones between 1\% and 1.75\% on every microphone position. Even thought, for the hard right and left positions, the numerical results presented more agressive peaks when compared with the middle microphone (5) as can be seen in Figures 4, 5 and 6, which can led to larger error on the microphones more distant from the propeller. 
 
 
 
