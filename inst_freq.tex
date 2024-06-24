@@ -208,7 +208,7 @@ An array of microphones, oriented towards the ground, is positioned in line at a
     \end{figure}
 
 All signals are simultaneously acquired using custom software implemented in Python3, utilizing the nidaqmx
-library. The signals are acquired with PXIe-4499 modules by National Instruments, with a sampling frequency of 51.2 kHz during 30 s runs for each test condition. \citep{Augusto}. The overview of the propeller mounted is shown in Fig.3.
+library. The signals are acquired with PXIe-4499 modules by National Instruments, with a sampling frequency of 51.2 kHz during 30 s runs for each test condition\citep{Augusto}. The microphone signals are then smoothed with a moving average with a window size of 2000 samples before compared with the numerical results. The overview of the propeller mounted is shown in Fig.3.
 \begin{figure}[h!]
     \centering
     \includegraphics[angle=0, scale=0.320]{Figures/UFSC_propeller_test_rig.png}
