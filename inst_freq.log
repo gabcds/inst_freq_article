@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.2)  24 JUN 2024 10:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.2)  25 JUN 2024 09:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -261,14 +261,21 @@ Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count290
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count291
+) (C:\Users\gabco\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count292
+\float@exts=\toks22
+\float@box=\box104
+\@float@everytoks=\toks23
+\@floatcapt=\box105
 )
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 14.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 15.
  (C:\Users\gabco\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (C:\Users\gabco\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count292
-\l__pdf_internal_box=\box104
+\l__color_backend_stack_int=\count293
+\l__pdf_internal_box=\box106
 ) (inst_freq.aux
 
 LaTeX Warning: Label `fig:third' multiply defined.
@@ -277,12 +284,6 @@ LaTeX Warning: Label `fig:third' multiply defined.
 LaTeX Warning: Label `sub@fig:third' multiply defined.
 
 
-LaTeX Warning: Label `fig:first' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:first' multiply defined.
-
-
 LaTeX Warning: Label `fig:second' multiply defined.
 
 
@@ -296,12 +297,6 @@ LaTeX Warning: Label `sub@fig:third' multiply defined.
 
 
 LaTeX Warning: Label `fig:figures' multiply defined.
-
-
-LaTeX Warning: Label `fig:first' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:first' multiply defined.
 
 
 LaTeX Warning: Label `fig:second' multiply defined.
@@ -340,19 +335,7 @@ LaTeX Warning: Label `fig:seventh' multiply defined.
 LaTeX Warning: Label `sub@fig:seventh' multiply defined.
 
 
-LaTeX Warning: Label `fig:eigth' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:eigth' multiply defined.
-
-
 LaTeX Warning: Label `fig:figures' multiply defined.
-
-
-LaTeX Warning: Label `fig:first' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:first' multiply defined.
 
 
 LaTeX Warning: Label `fig:second' multiply defined.
@@ -389,12 +372,6 @@ LaTeX Warning: Label `fig:seventh' multiply defined.
 
 
 LaTeX Warning: Label `sub@fig:seventh' multiply defined.
-
-
-LaTeX Warning: Label `fig:eigth' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:eigth' multiply defined.
 
 
 LaTeX Warning: Label `fig:figures' multiply defined.
@@ -402,33 +379,33 @@ LaTeX Warning: Label `fig:figures' multiply defined.
 )
 \openout1 = `inst_freq.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
  (C:\Users\gabco\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count293
+\scratchcounter=\count294
 \scratchdimen=\dimen173
-\scratchbox=\box105
-\nofMPsegments=\count294
-\nofMParguments=\count295
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count296
+\scratchbox=\box107
+\nofMPsegments=\count295
+\nofMParguments=\count296
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count297
 \MPscratchDim=\dimen174
-\MPnumerator=\count297
-\makeMPintoPDFobject=\count298
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
+\everyMPtoPDFconversion=\toks25
 ) (C:\Users\gabco\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -436,28 +413,281 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 <Figures/Encit_logo.png, id=1, 637.1805pt x 198.7425pt>
 File: Figures/Encit_logo.png Graphic file (type png)
 <use Figures/Encit_logo.png>
-Package pdftex.def Info: Figures/Encit_logo.png  used on input line 15.
+Package pdftex.def Info: Figures/Encit_logo.png  used on input line 16.
 (pdftex.def)             Requested size: 185.36096pt x 57.81621pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 15.
+(Font)              <7> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 15.
+(Font)              <5> on input line 16.
 <Figures/abcm_logo.pdf, id=3, 143.18974pt x 45.45627pt>
 File: Figures/abcm_logo.pdf Graphic file (type pdf)
 <use Figures/abcm_logo.pdf>
-Package pdftex.def Info: Figures/abcm_logo.pdf  used on input line 15.
+Package pdftex.def Info: Figures/abcm_logo.pdf  used on input line 16.
 (pdftex.def)             Requested size: 143.18938pt x 45.45615pt.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 15.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 16.
  (C:\Users\gabco\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-Overfull \hbox (7.0868pt too wide) in paragraph at lines 15--68
+Overfull \hbox (7.0868pt too wide) in paragraph at lines 16--69
 | [] 
  []
 
 
-Underfull \vbox (badness 1
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+{C:/Users/gabco/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Figures/Encit_logo.png> <./Figures/abcm_logo.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 98.
+ (C:\Users\gabco\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+<Figures/spectra_band_1.png, id=29, 1078.9911pt x 703.1871pt>
+File: Figures/spectra_band_1.png Graphic file (type png)
+<use Figures/spectra_band_1.png>
+Package pdftex.def Info: Figures/spectra_band_1.png  used on input line 117.
+(pdftex.def)             Requested size: 193.47577pt x 126.08537pt.
+<Figures/spectra_band_1.5.png, id=30, 1078.9911pt x 703.1871pt>
+File: Figures/spectra_band_1.5.png Graphic file (type png)
+<use Figures/spectra_band_1.5.png>
+Package pdftex.def Info: Figures/spectra_band_1.5.png  used on input line 124.
+(pdftex.def)             Requested size: 193.47577pt x 126.08537pt.
+<Figures/spectra_band_1.75.png, id=31, 1078.9911pt x 703.1871pt>
+File: Figures/spectra_band_1.75.png Graphic file (type png)
+<use Figures/spectra_band_1.75.png>
+Package pdftex.def Info: Figures/spectra_band_1.75.png  used on input line 131.
+(pdftex.def)             Requested size: 193.47577pt x 126.08537pt.
+<Figures/spectra_band_3.png, id=32, 1078.9911pt x 703.1871pt>
+File: Figures/spectra_band_3.png Graphic file (type png)
+<use Figures/spectra_band_3.png>
+Package pdftex.def Info: Figures/spectra_band_3.png  used on input line 138.
+(pdftex.def)             Requested size: 193.47577pt x 126.08537pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 18.23401pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.23401pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-4.00764pt}.
+
+[2]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 18.23401pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.23401pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-4.00764pt}.
+
+[3 <./Figures/spectra_band_1.png> <./Figures/spectra_band_1.5.png> <./Figures/spectra_band_1.75.png> <./Figures/spectra_band_3.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 18.23401pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.23401pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-4.00764pt}.
+
+[4]
+<Figures/ufsc_microphone_array.png, id=54, 535.2497pt x 310.15875pt>
+File: Figures/ufsc_microphone_array.png Graphic file (type png)
+<use Figures/ufsc_microphone_array.png>
+Package pdftex.def Info: Figures/ufsc_microphone_array.png  used on input line 206.
+(pdftex.def)             Requested size: 535.24838pt x 310.15799pt.
+<Figures/UFSC_propeller_test_rig.png, id=55, 589.4522pt x 469.755pt>
+File: Figures/UFSC_propeller_test_rig.png Graphic file (type png)
+<use Figures/UFSC_propeller_test_rig.png>
+Package pdftex.def Info: Figures/UFSC_propeller_test_rig.png  used on input line 215.
+(pdftex.def)             Requested size: 589.45076pt x 469.75386pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 18.23401pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.23401pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-4.00764pt}.
+
+[5
+
+ <./Figures/ufsc_microphone_array.png> <./Figures/UFSC_propeller_test_rig.png>]
+<Figures/rpm_analysis_mic0_band_0.5.png, id=61, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic0_band_0.5.png Graphic file (type png)
+<use Figures/rpm_analysis_mic0_band_0.5.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic0_band_0.5.png  used on input line 229.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic0_band_0.75.png, id=62, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic0_band_0.75.png Graphic file (type png)
+<use Figures/rpm_analysis_mic0_band_0.75.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic0_band_0.75.png  used on input line 236.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic0_band_1.png, id=63, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic0_band_1.png Graphic file (type png)
+<use Figures/rpm_analysis_mic0_band_1.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic0_band_1.png  used on input line 244.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic0_band_1.2.png, id=64, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic0_band_1.2.png Graphic file (type png)
+<use Figures/rpm_analysis_mic0_band_1.2.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic0_band_1.2.png  used on input line 251.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic0_band_1.5.png, id=65, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic0_band_1.5.png Graphic file (type png)
+<use Figures/rpm_analysis_mic0_band_1.5.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic0_band_1.5.png  used on input line 258.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic0_band_1.75.png, id=66, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic0_band_1.75.png Graphic file (type png)
+<use Figures/rpm_analysis_mic0_band_1.75.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic0_band_1.75.png  used on input line 265.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic4_band_0.5.png, id=67, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic4_band_0.5.png Graphic file (type png)
+<use Figures/rpm_analysis_mic4_band_0.5.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic4_band_0.5.png  used on input line 282.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic4_band_0.75.png, id=68, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic4_band_0.75.png Graphic file (type png)
+<use Figures/rpm_analysis_mic4_band_0.75.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic4_band_0.75.png  used on input line 289.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic4_band_1.png, id=69, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic4_band_1.png Graphic file (type png)
+<use Figures/rpm_analysis_mic4_band_1.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic4_band_1.png  used on input line 296.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic4_band_1.2.png, id=70, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic4_band_1.2.png Graphic file (type png)
+<use Figures/rpm_analysis_mic4_band_1.2.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic4_band_1.2.png  used on input line 303.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic4_band_1.5.png, id=71, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic4_band_1.5.png Graphic file (type png)
+<use Figures/rpm_analysis_mic4_band_1.5.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic4_band_1.5.png  used on input line 310.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic4_band_1.75.png, id=72, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic4_band_1.75.png Graphic file (type png)
+<use Figures/rpm_analysis_mic4_band_1.75.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic4_band_1.75.png  used on input line 317.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 18.23401pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.23401pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-4.00764pt}.
+
+[6 <./Figures/rpm_analysis_mic0_band_0.5.png> <./Figures/rpm_analysis_mic0_band_0.75.png> <./Figures/rpm_analysis_mic0_band_1.png> <./Figures/rpm_analysis_mic0_band_1.2.png> <./Figures/rpm_analysis_mic0_band_1.5.png> <./Figures/rpm_analysis_mic0_band_1.75.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 18.23401pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.23401pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-4.00764pt}.
+
+[7 <./Figures/rpm_analysis_mic4_band_0.5.png> <./Figures/rpm_analysis_mic4_band_0.75.png> <./Figures/rpm_analysis_mic4_band_1.png> <./Figures/rpm_analysis_mic4_band_1.2.png> <./Figures/rpm_analysis_mic4_band_1.5.png> <./Figures/rpm_analysis_mic4_band_1.75.png>]
+<Figures/rpm_analysis_mic8_band_0.5.png, id=92, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic8_band_0.5.png Graphic file (type png)
+<use Figures/rpm_analysis_mic8_band_0.5.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic8_band_0.5.png  used on input line 332.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic8_band_0.75.png, id=93, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic8_band_0.75.png Graphic file (type png)
+<use Figures/rpm_analysis_mic8_band_0.75.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic8_band_0.75.png  used on input line 339.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic8_band_1.png, id=94, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic8_band_1.png Graphic file (type png)
+<use Figures/rpm_analysis_mic8_band_1.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic8_band_1.png  used on input line 346.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic8_band_1.2.png, id=95, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic8_band_1.2.png Graphic file (type png)
+<use Figures/rpm_analysis_mic8_band_1.2.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic8_band_1.2.png  used on input line 353.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic8_band_1.5.png, id=96, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic8_band_1.5.png Graphic file (type png)
+<use Figures/rpm_analysis_mic8_band_1.5.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic8_band_1.5.png  used on input line 360.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+<Figures/rpm_analysis_mic8_band_1.75.png, id=97, 1084.05pt x 578.16pt>
+File: Figures/rpm_analysis_mic8_band_1.75.png Graphic file (type png)
+<use Figures/rpm_analysis_mic8_band_1.75.png>
+Package pdftex.def Info: Figures/rpm_analysis_mic8_band_1.75.png  used on input line 367.
+(pdftex.def)             Requested size: 193.47577pt x 103.1821pt.
+ (inst_freq.bbl
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 17.
+ (C:\Users\gabco\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+Underfull \hbox (badness 1067) in paragraph at lines 42--52
+\T1/ptm/m/n/10 cess-ing of the time do-main av-er-age of the mesh-ing vi-bra-tion''.  \T1/ptm/m/it/10 Me-chan-i-cal Sys-tems and Sig-nal Pro-cess-
+ []
+
+
+Underfull \vbox (badness 4726) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 18.23401pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.23401pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-4.00764pt}.
+
+[8 <./Figures/rpm_analysis_mic8_band_0.5.png> <./Figures/rpm_analysis_mic8_band_0.75.png> <./Figures/rpm_analysis_mic8_band_1.png> <./Figures/rpm_analysis_mic8_band_1.2.png> <./Figures/rpm_analysis_mic8_band_1.5.png> <./Figures/rpm_analysis_mic8_band_1.75.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 64--72
+[]\T1/ptm/m/n/10 Sharma, V. and Parey, A., 2016.  ``Gear crack de-tec-tion us-ing mod-i-fied tsa and pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--72
+\T1/ptm/m/n/10 posed fault in-di-ca-tors for fluc-tu-at-ing speed con-di-tions''.  \T1/ptm/m/it/10 Mea-sure-ment\T1/ptm/m/n/10 , Vol. 90, pp. 560--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--72
+\T1/ptm/m/n/10 575.  ISSN 0263-2241.  doi:https://doi.org/10.1016/j.measurement.2016.04.076.  URL
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 18.23401pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.23401pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-4.00764pt}.
+
+[9] (inst_freq.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6164 strings out of 474424
+ 109890 string characters out of 5741740
+ 1942496 words of memory out of 5000000
+ 28439 multiletter control sequences out of 15000+600000
+ 582303 words of font info for 55 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,13n,79p,974b,477s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\gabco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gabco/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on inst_freq.pdf (9 pages, 5596529 bytes).
+PDF statistics:
+ 206 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -8,8 +8,9 @@
 \usepackage{abcm}
 \usepackage{graphicx}
 \usepackage{subcaption}
-\def\shortauthor{F. Author, S. Author and T. Author (update this heading accordingly)}
-\def\shorttitle{Paper Short Title (First Letters Uppercase, make sure it fits in one line)}
+\usepackage{float}
+\def\shortauthor{G. Costa, M. Grassano}
+\def\shorttitle{Signal Demodulation for Estimating Drone Propeller Rotational Speed}
 
 \begin{document}
 \fphead
@@ -220,16 +221,9 @@ library. The signals are acquired with PXIe-4499 modules by National Instruments
 \subsection{Experimental signal}
 Regarding the selection of the propeller signal frequency band, as mentioned in Section 2, the characteristic frequency of the harmonic given by the first BPF was chosen as the central frequency, characterized as the tone with the highest energy. The frequency band variation was 0.1\%, 0.5\%, 0.75\%, 1\%, 1.2\%, 1.5\%, 1.75\%, 2\%, and 3\% of this frequency, both above and below. 
 
-In Fig. 4, 5 and 6 is shown the results given by analyzing diferent frequency bands from the experimental signal of the microphones 1, 5 and 9 of the experimental setup, which correspond to the hard right, hard left and the middle positions, respectively.
-
-\begin{figure}
-    \centering
-    \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_0.1.png}
-        \caption{Velocity profile band 0.1\%}
-        \label{fig:first}
-    \end{subfigure}
-    \hfill
+In Fig. 4, 5 and 6 is shown the results given by analyzing diferent frequency bands from the experimental signal of the microphones 1, 5 and 9 of the experimental setup, which correspond to the hard right, hard left and the middle positions, respectively. 
+\newpage
+\begin{figure}[H] 
     \centering
     \begin{subfigure}{0.4\textwidth}
         \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_0.5.png}
@@ -245,6 +239,7 @@ In Fig. 4, 5 and 6 is shown the results given by analyzing diferent frequency ba
     \end{subfigure}
     \centering
     \hfill
+    
     \begin{subfigure}{0.4\textwidth}
         \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_1.png}
         \caption{Velocity profile band 1\%}
@@ -271,27 +266,17 @@ In Fig. 4, 5 and 6 is shown the results given by analyzing diferent frequency ba
         \caption{Velocity profile band 1.75\%}
         \label{fig:seventh}
     \end{subfigure}
-    \centering
-    \hfill 
-    \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic0_band_3.png}
-        \caption{Velocity profile band 3\%}
-        \label{fig:eigth}
-    \end{subfigure}
+
             
     \caption{RPM analysis diferent frequency bands from microphone 1 (hard right).}
     \label{fig:figures}
     \end{figure}
 
     %mic 5 
-    \begin{figure}
-        \centering
-        \begin{subfigure}{0.4\textwidth}
-            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic4_band_0.1.png}
-            \caption{Velocity profile band 0.1\%}
-            \label{fig:first}
-        \end{subfigure}
-        \hfill
+    
+    \begin{figure}[H]
+
+       
         \centering
         \begin{subfigure}{0.4\textwidth}
             \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic4_band_0.5.png}
@@ -332,28 +317,16 @@ In Fig. 4, 5 and 6 is shown the results given by analyzing diferent frequency ba
             \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic4_band_1.75.png}
             \caption{Velocity profile band 1.75\%}
             \label{fig:seventh}
-        \end{subfigure}
-        \centering
-        \hfill 
-        \begin{subfigure}{0.4\textwidth}
-            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic4_band_3.png}
-            \caption{Velocity profile band 3\%}
-            \label{fig:eigth}
-        \end{subfigure}
-                
+        \end{subfigure}   
         \caption{RPM analysis diferent frequency bands from microphone 5 (middle).}
         \label{fig:figures}
         \end{figure}
 
     %mic 9
-    \begin{figure}
-        \centering
-        \begin{subfigure}{0.4\textwidth}
-            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic8_band_0.1.png}
-            \caption{Velocity profile band 0.1\%}
-            \label{fig:first}
-        \end{subfigure}
-        \hfill
+    \newpage
+    \begin{figure}[H] 
+        
+        
         \centering
         \begin{subfigure}{0.4\textwidth}
             \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic8_band_0.5.png}
@@ -394,13 +367,6 @@ In Fig. 4, 5 and 6 is shown the results given by analyzing diferent frequency ba
             \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic8_band_1.75.png}
             \caption{Velocity profile band 1.75\%}
             \label{fig:seventh}
-        \end{subfigure}
-        \centering
-        \hfill 
-        \begin{subfigure}{0.4\textwidth}
-            \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic8_band_3.png}
-            \caption{Velocity profile band 3\%}
-            \label{fig:eigth}
         \end{subfigure}
                 
         \caption{RPM analysis diferent frequency bands from microphone 9 (hard left).}
