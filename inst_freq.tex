@@ -72,45 +72,40 @@ In the ever-evolving realm of drone technology, the precise estimation of propel
 
 Upon scrutinizing the acoustic traits of noise produced by fully electric propulsion systems, it becomes apparent that the primary sources are the interactions between the blades and the airflow, encompassing turbulence and vortical effects. The dominant aspect of the noise spectrum comprises the tonal rendition, characterized by multiples of the blade-pass frequency (BPF), signifying a periodic signal. In contrast, the broadband feature, originating from the blade interactions, disperses energy throughout all frequency bands, exhibiting inherent stochasticity. In order to better analyze the noise sources, the features must be separated, which can express plenty dificulties, upon rotational speed fluctuations.
 
-In this context, the Time Synchronous Averaging Method (TSA) \citep{MCFADDEN1987173} finds extensive application in rotors operating at constant rotational speeds, owing to its straightforward implementation and effectiveness in isolating peaks. The method operates by averaging segments of acoustic data corresponding to a single rotation length in the time domain. However, its efficacy diminishes when applied to systems with varying speeds, as the irregular periodicity of segments undermines its performance. \cite{SHARMA2016560} proposed a tonal and broadband components TSA-based decomposition in order to calculate fault indicators in gears, which considerates the rotational frequency fluctuation, therefore, this technique takes in account the tachometer signal, using n pulses per revolution. With this device it is possible to track the angular position of any shaft. 
+In this context, the Time Synchronous Averaging Method (TSA) \citep{MCFADDEN1987173} finds extensive application in rotors operating at constant rotational speeds, owing to its straightforward implementation and effectiveness in isolating peaks. The method operates by averaging segments of acoustic data corresponding to a single rotation length in the time domain. However, its efficacy diminishes when applied to systems with varying speeds, as the irregular periodicity of segments undermines its performance. \cite{SHARMA2016560} proposed a tonal and broadband components TSA-based decomposition in order to calculate fault indicators in gears, which considerates the rotational frequency fluctuations. Therefore, this technique takes in account the tachometer This paper aims to evaluate the efficacy of a tacholess phase demodulation technique for estimating drone propeller rotational speed and its implications for noise source analysis, contrasting it with traditional tachometer-based methods. With this device it is possible to track the angular position of any shaft. 
 
-Small-scale propellers, typically found in drones, necessitate accurate measurement techniques amidst the backdrop of inherent experimental fluctuations. Traditional methods, reliant on tachometer data, often falter due to practical constraints and environmental sensitivities, prompting a quest for alternative methodologies. \cite{article} presents a complete analysis on various methods that discart the need of a tacho signal.
+Small-scale propellers, typically found in drones, necessitate accurate measurement techniques amidst the backdrop of inherent experimental fluctuations. In order to obtain the deterministic counterpart of the signal, the TSA can also be used in this application. Traditional TSA methods, reliant on tachometer data, often falter due to practical constraints and environmental sensitivities, prompting a quest for alternative methodologies. \cite{article} presents a complete analysis on various methods that discart the need of a tacho signal.
 
-\cite{Urbanek2011ComparisonOA} investigate three major instantaneous frequency estimation techiniques without any phase markers use in wind turbines speed tracking application. The spectrogram-based method proceeds with a maxima tracking due to the fact the peaks with the highest energy on the spectrogram should correspond to the value of the instantaneous frequency at each moment in time.
+\cite{Urbanek2011ComparisonOA} investigate three major instantaneous frequency estimation techiniques without any phase markers use in wind turbines speed tracking application, the spectrogram-based, demodulation-based and hybrid method. The spectrogram-based method proceeds with a maxima tracking due to the fact the peaks with the highest energy on the spectrogram should correspond to the value of the instantaneous frequency at each moment in time. The demodulation-based is the method approached in the current study and the hybrid uses tools from both techniques mentioned before.
 
-In another approach,\cite{BONNARDOT2005766} proposed a tacholess technique of estimating the instantaneous rotation of a shaft with limited frequency fluctuations. The method is based on the phase demodulation and utilizes the Hilbert Transform, a matematical instrument to obtain the imaginary part of the analytic signal, which corresponds to the phase of the signal. The main achievement of this technique is that extincts the need of a tachometer, the instant rotation can calculated based on the shaft vibration data. This work analyses the merits and the feasibility of this method.
+In another approach,\cite{BONNARDOT2005766} proposed a tacholess technique of estimating the instantaneous rotation of a shaft with limited frequency fluctuations. The method is based on the phase demodulation and utilizes the Hilbert Transform, a matematical instrument to obtain the imaginary part of the analytic signal. The main achievement of this technique is that extincts the need of a tachometer, the instant rotation can calculated based on the shaft vibration data. This work analyses the merits and the feasibility of this method. \cite{knust2023diss} also provided an extended analysis with the demodulation-based method and TSA applicated to fault detection in bearing supports, the study was able to perform well on its field of analysis.
 
-This work is organized as follows: Section 2 presents the methodology of the phase demodulation technique, describing in details the physics behind the numerical calculation. Section 3 describes some setups of both numerical and experimental data and Section 4 compares the results with the tachometer real information, as well as evaluates the components of the resampled signal with Time Synchronous Averaging (TSA) techiniques. Finally, Section 5 concludes the consistency of the demodulation method.
+This paper aims to evaluate the efficacy of a tacholess phase demodulation technique for estimating drone propeller rotational speed and its implications for noise source analysis, contrasting it with traditional tachometer-based methods. This work is organized as follows: Section 2 presents the methodology of the phase demodulation technique, describing in details the physics behind the numerical calculation. Section 3 describes some setups of both numerical and experimental data and Section 4 compares the results with the tachometer real information, as well as evaluates the components of the resampled signal with Time Synchronous Averaging (TSA) techiniques. Finally, Section 5 concludes the consistency of the demodulation method.
 
 \section{METHODOLOGY}
-Section 1 introduces the importance of the study and begins with a literature review on the current advances in the field. This part of the study is aimed at presenting in details the methodology to be followed in order to perform the instantaneous frequency profile caracterization of a propeller.
-
-First, a widely used mathematical tool in the field of signal analysis is presented. 
+Section 1 introduces the importance of the study and begins with a literature review on the current advances in the field. This part of the study is aimed at presenting in details the methodology to be followed in order to perform the instantaneous frequency profile caracterization of a propeller. Firstly, a widely used mathematical tool in the field of signal analysis is presented. 
 
 \subsection{The Hilbert Transform}
 
 Consider a system with an input $x(t)$ and a filter $h(t) = \frac{1}{\pi t}$. The output of the system is given by:
 \begin{equation}
-    y(t) = \hat{x}(t) =  h(t) * x(t) = \frac{1}{\pi t} * x(t)
+    y(t) = \hat{x}(t) =  h(t) * x(t) = \frac{1}{\pi t} * x(t).
     \label{eq1}
 \end{equation}
-
 This convolution operation is called a Hilbert Transform \citep{shin}. Note that $h(t)$ is a non-causal filter with a singularity at $t=0$. The Hilbert transform is often referred to as a 90º phase shifter. For example, the Hilbert transform of $cos(\omega_{0} t)$ is $sin(\omega_{0} t)$, and that of $sin(\omega_{0} t)$ is $-cos(\omega_{0} t)$.
 
-The significance of the Hilbert transform is that it is used to form the so called "analytic signal" or "pre-envelope signal". An analytic signal is a complex time signal whose real part is the original signal $x(t)$ and where imaginary part is the Hilbert transform of $x(t)$, i.e. $\hat{x}(t)$. Thus, the analytic signal $a_{x} (t)$ is defined as:
+The significance of the Hilbert transform is that it is used to form the so called "analytic signal" or "pre-envelope signal". An analytic signal is a complex time signal whose real part is the original signal $x(t)$ and the    imaginary part is the Hilbert transform of $x(t)$, i.e. $\hat{x}(t)$. Thus, the analytic signal $a_{x} (t)$ is defined as:
 
 \begin{equation}
-    a_{x} (t) = x(t) + i\hat{x}(t) = A_{x}(t)e^{i\phi_{x}(t)}
+    a_{x} (t) = x(t) + i\hat{x}(t) = A_{x}(t)e^{i\phi_{x}(t)}.
     \label{eq2}
 \end{equation}
 Where $A_{x}(t) = \sqrt{x^2 (t)+ \hat{x}^2 (t)}$ is the instantaneous amplitude, and $\phi_{x} = tan^{-1}(\hat{x}(t)/x(t))$ is the instantaneous phase.
 
 \subsection{The Demodulation Method}
-The primary method used for determining the instantaneous frequencies of a two-bladed propeller is the Demodulation Method \citep{BONNARDOT2005766}, a robust and effective procedure that allows for a detailed and precise analysis of dynamic variations over time.
+The primary method used for determining the instantaneous frequencies of a two-bladed propeller is the Demodulation Method \citep{BONNARDOT2005766}, a robust and effective procedure that allows for a detailed and precise analysis of dynamic variations over time. The technique consists of five main steps, each with its own peculiarities and conditions for optimal performance. This will be discussed in detail in Section 5, where the results will be presented.
 
-The technique consists of five main steps, each with its own peculiarities and conditions for optimal performance. This will be discussed in detail in Section 5, where the results will be presented.
-
-Firtly, a characteristic harmonic of the signal is selected, with this study focusing on the first Blade Pass Frequency (BPF), which represents the harmonic with the highest energy. Subsequently, through a detailed visual analysis of the spectrum, a band-pass filter is applied to precisely isolate the region corresponding to the shaft rotation harmonic, along with its controlled frequency variations. This approach ensures a focused and accurate examination of the relevant dynamic behaviors. Fig. 1 demonstrated the frequency band selection for the filtering.
+Firtly, a characteristic harmonic of the signal is selected, with this study focusing on the first Blade Pass Frequency (BPF), which represents the harmonic with the highest energy. Subsequently, through a detailed visual analysis of the spectrum, a band-pass filter is applied to precisely isolate the region corresponding to the shaft rotation harmonic, along with its controlled frequency variations. This approach ensures a focused and accurate examination of the relevant dynamic behaviors. Fig. 1 demonstrated difference of the selection of different frequency bands selection for the filtering.
 \begin{figure}
     \centering
     \begin{subfigure}{0.4\textwidth}
@@ -143,24 +138,20 @@ Firtly, a characteristic harmonic of the signal is selected, with this study foc
     \caption{Band selection with diferent percentages.}
     \label{fig:figures}
     \end{figure}
-It is important to add that the band of interest choice is primarily empirical, which results in testing band percentages and assess the performance of the ones who fit the problem the most. In this study we manage to compare multiple band percentages with the experimental instantaneous rotational frequency of the propeller. 
-
-Once the frequency band of the characteristic harmonic is selected, one may estimate the analytic signal according to \ref{eq2}, so that is possible to extract the analitical parameters of interest, such as the instantaneous phase of the propeller signal.
+It is important to add that the band of interest choice is primarily empirical, which results in testing band percentages and assess the performance of the ones who fit the problem the most. Once the frequency band of the characteristic harmonic is selected, one may be filtered on this band and afterwords estimated the analytic signal according to \ref{eq2}, so that is possible to extract the analitical parameters of interest, such as the instantaneous phase of the propeller signal.
 
 
 After the analytic signal is estimated, we shall extract the phase from one $\phi_{x} (t) = tan^{-1}(\hat{x}(t)/x(t))$. The phase is then normalized by dividing the phase by the order $m$ of the harmonic chosen in the first step. 
 \begin{equation}
-    \phi_{x,m} (t)=\frac{\phi_{x}(t)}{m} 
+    \phi_{x,m} (t)=\frac{\phi_{x}(t)}{m}. 
     \label{eq3}
 \end{equation}
 
-After this normalization, the angular position of the propeller in radians in determined. In order to facilitate later mathematical manipulations, the phase is transformed into a first degree function to ensure the proportionality of the angular signal obtained. This can be done easily with a Numpy build-in function.
-
-The phase markers are defined to identify the moment where the propeller completes one rotation, which is when the index corresponds to $2\pi$ radians. This is achieved through a linear interpolation between time and phase. From these markers, it is possible to establish a list that records the complete rotations, thus allowing the rotation period to be determined.
+After this normalization, the angular position of the propeller in radians in determined. In order to facilitate later mathematical manipulations, the phase is transformed into a first degree function to ensure the proportionality of the angular signal obtained. This can be done easily with a Numpy build-in function. The phase markers are defined to identify the moment where the propeller completes one rotation, which is when the index corresponds to $2\pi$ radians. This is achieved through a linear interpolation between time and phase. From these markers, it is possible to establish a list that records the complete rotations, thus allowing the rotation period to be determined.
 
 Finally, the speed profile can be traced based on the propeller rotation period, since:
 \begin{equation}
-    f = \frac{1}{T} = \frac{1}{t_{i+1}-t_{i}}
+    f = \frac{1}{T} = \frac{1}{t_{i+1}-t_{i}}.
     \label{eq4}
 \end{equation}
 Where the notation $t_{i}$ is the time instant $t$ where the phase marker $i$ is generated. 
@@ -177,16 +168,15 @@ In Sec. 2 was presented the demodulation techniques tested in this study to extr
     \item Re-sample the velocity array from step 2 to have the same $fs$ as the desired synthetic signal. In this work, a cubic spline interpolation was used to provide a smooth curve. The resulting array  is the instantaneous frequency, $f_i(t)$ to be used in:
     \begin{equation}
         \label{eq5}
-        \theta_i (t)=2\pi \int_{0}^{t}f_i (t)dt
+        \theta_i (t)=2\pi \int_{0}^{t}f_i (t)dt.
     \end{equation}
 \end{enumerate} 
 
 Finally, the synthetic signal is the sum of modulated harmonic signals, which can be given by:
 \begin{equation}
     \label{eq6}
-    p(t) = \sum_{n=1}^{N} A_n sin(n\theta_i (t) + \phi_n) + w(t)
+    p(t) = \sum_{n=1}^{N} A_n sin(n\theta_i (t) + \phi_n) + w(t).
 \end{equation}
-
 Where N is the number of harmonics, $A_n$ is the harmonic amplitude, $\theta_i$ is the instantaneous phase angle defined in \ref{eq5}, $\phi_n$ is a random phase angle with a uniform distribution in the interval $[0,2\pi]$ and $w(t)$ is a Gaussian white noise that represents the broadband component of the propeller signal.
 
 \subsection{Experimental setup}
@@ -201,27 +191,107 @@ update rate of 30 Hz.
 
 An array of microphones, oriented towards the ground, is positioned in line at a distance of 1.6 m from the steel column, parallel and 2 m away from the propeller axis. The array is arranged to cover a range from -45° to 45°, with 0° representing the rotor disk plane and positive angles measured above the rotation plane. Comprising nine GRAS 46AE 1/2” free-field microphones, the array includespositions at angular offsets of -27.5°, 0° and 27.5°, numbered 3, 5 and 7, respectively. The minimum ratio of the distance between microphones and the hub r to the propeller diameter d was r/d = 6.5, ensuring all microphones were positioned in the acoustic far field. The microphone array is presented in Fig.2.
 \clearpage
-\begin{figure}[h!]
+\begin{figure}
     \centering
-    \includegraphics[angle=0, scale=0.320]{Figures/ufsc_microphone_array.png}
+    \includegraphics[width=0.6\textwidth]{Figures/ufsc_microphone_array.png}
     \caption{UFSC test rig microphone array displacement}
     \label{fig2}
     \end{figure}
 
 All signals are simultaneously acquired using custom software implemented in Python3, utilizing the nidaqmx
 library. The signals are acquired with PXIe-4499 modules by National Instruments, with a sampling frequency of 51.2 kHz during 30 s runs for each test condition\citep{Augusto}. The microphone signals are then smoothed with a moving average with a window size of 2000 samples before compared with the numerical results. The overview of the propeller mounted is shown in Fig.3.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=0.6\textwidth]{Figures/complete_struc.jpg}
+        \caption{Complete structure.}
+        \label{fig:first}
+    \end{subfigure}
+    
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/instrumentation_testrig.jpg}
+        \caption{Test rig instrumentation scheme.}
+        \label{fig:second}
+    \end{subfigure}
+    \hfill
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/mounted_propeller.jpg}
+        \caption{UFSC propeller mounted on the rig.}
+        \label{fig:fourth}
+    \end{subfigure}
+    \caption{UFSC propeller test rig}
+    \label{fig:figures}
+    \end{figure}
+
+\section{Results}
+In this Section the results will be presented. Some observations may be done.
+
+\begin{enumerate}
+    \item After a visual inspection of the experimental results done by the authors, it can be conclude that the band inspection is a primal parameter in order to obtain a great performance of the techinique. For every microphone analysed, below 0.1\%, it was observed that the instantaneous frequency variation was cut off due to the excessively narrow band in the spectrum, and above 3\%, the result began to diverge due to the excessively wide band in the characteristic tone. 
+    \item The previous results from the simulated signal showed that the frequency band must be much larger compared to the experimental one, with the most consistent results present in bands from 30\% to 80\%. For the current work, in Fig. 5 is shown the results for 30\% to 80\% frequency band percentages selection.
+\end{enumerate}
+
+\subsection{Synthetic signal}
+The raw (without any filter) synthetic signal and its spectrum with a 30\% band choice can be shown in Fig. 4.
 \begin{figure}[h!]
     \centering
-    \includegraphics[angle=0, scale=0.320]{Figures/UFSC_propeller_test_rig.png}
-    \caption{UFSC propeller test rig}
-    \label{fig3}
+    \includegraphics[width=0.7\textwidth]{Figures/simulated_spectrum_band_30.png}
+    \caption{Simulated propeller signal and its spectra.}
+    \label{fig4}
     \end{figure}
-\section{Results}
-\subsection{Synthetic signal}
+    
+
+
+\newpage
+\begin{figure}[H] 
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/rpm_analysis_band_30.png}
+        \caption{Simulated Velocity profile band 30\%}
+        \label{fig:second}
+    \end{subfigure}
+    \hfill
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/rpm_analysis_band_50.png}
+        \caption{Simulated velocity profile band 50\%}
+        \label{fig:third}
+    \end{subfigure}
+    \centering
+    \hfill
+    
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/rpm_analysis_band_60.png}
+        \caption{Simulated velocity profile band 60\%}
+        \label{fig:fourth}
+    \end{subfigure}
+    \centering
+    \hfill
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/rpm_analysis_band_70.png}
+        \caption{Simulated velocity profile band 70\%}
+        \label{fig:fifth}
+    \end{subfigure}
+    \centering
+    \hfill
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Figures/rpm_analysis_band_80.png}
+        \caption{Simulated velocity profile band 80\%}
+        \label{fig:sixth}
+    \end{subfigure}   
+    \caption{RPM analysis diferent frequency bands from the synthetic propeller signal.}
+    \label{fig:figures}
+    \end{figure}
+
+
+
 \subsection{Experimental signal}
 Regarding the selection of the propeller signal frequency band, as mentioned in Section 2, the characteristic frequency of the harmonic given by the first BPF was chosen as the central frequency, characterized as the tone with the highest energy. The frequency band variation was 0.1\%, 0.5\%, 0.75\%, 1\%, 1.2\%, 1.5\%, 1.75\%, 2\%, and 3\% of this frequency, both above and below. 
 
-In Fig. 4, 5 and 6 is shown the results given by analyzing diferent frequency bands from the experimental signal of the microphones 1, 5 and 9 of the experimental setup, which correspond to the hard right, hard left and the middle positions, respectively. 
+In Fig. 6, 7 and 8 is shown the results given by analyzing diferent frequency bands from the experimental signal of the microphones 1, 5 and 9 of the experimental setup, which correspond to the hard right, hard left and the middle positions, respectively. 
 \newpage
 \begin{figure}[H] 
     \centering
@@ -326,7 +396,6 @@ In Fig. 4, 5 and 6 is shown the results given by analyzing diferent frequency ba
     \newpage
     \begin{figure}[H] 
         
-        
         \centering
         \begin{subfigure}{0.4\textwidth}
             \includegraphics[width=\textwidth]{Figures/rpm_analysis_mic8_band_0.5.png}
@@ -368,27 +437,26 @@ In Fig. 4, 5 and 6 is shown the results given by analyzing diferent frequency ba
             \caption{Velocity profile band 1.75\%}
             \label{fig:seventh}
         \end{subfigure}
-                
         \caption{RPM analysis diferent frequency bands from microphone 9 (hard left).}
         \label{fig:figures}
         \end{figure}
 \section{Conclusion}
-In Sec. 1 the current literature approaches for the problem stated. Sec. 2 presented the methodology of the selected technique to extract the instantaneous frequency of a shaft, but applied to a propeller signal, the called Demodulation method. In Sec. 3 is presented how the propeller data is gattered, wheter is a synthetic or experimental signal, Sec. 4 shows the results from either of the two data types. In the current section, we provide the conclusion, the feasibility or accuracity of the method exposed.
 
-After a visual inspection of the experimental results, it can be conclude that the band inspection is a primal parameter in order to obtain a great performance of the techinique. For every microphone analysed,below 0.1\%, it was observed that the instantaneous frequency variation was cut off due to the excessively narrow band in the spectrum, and above 3\%, the result began to diverge due to the excessively wide band in the characteristic tone. 
+This paper aims to evaluate the efficacy of a tacholess phase demodulation technique for estimating drone propeller rotational speed and its implications for noise source analysis, contrasting it with traditional tachometer-based methods. In Sec. 1 the current literature approaches for the problem stated. Sec. 2 presented the methodology of the selected technique to extract the instantaneous frequency of a shaft, but applied to a propeller signal, the called Demodulation method. In Sec. 3 is presented how the propeller data is gattered, wheter is a synthetic or experimental signal, Sec. 4 shows the results from either of the two data types. In the current section, we provide the conclusion, the feasibility or accuracity of the method exposed.
 
-The better fitted band choices were the ones between 1\% and 1.75\% on every microphone position. Even thought, for the hard right and left positions, the numerical results presented more agressive peaks when compared with the middle microphone (5) as can be seen in Figures 4, 5 and 6, which can led to larger error on the microphones more distant from the propeller. 
+By analysing the frequency band choices of the synthetic signal results, it can be concluded that 50\% band choice was one of the most consistent results inspected. The application of the techinique for the synthetic signal presented did not performed very well in capturing frequency deviations.
+
+The better fitted band choices were the ones between 1\% and 1.75\% on every microphone position. Even thought, for the hard right and left positions, the numerical results presented more agressive peaks when compared with the middle microphone (5) as can be seen in Figures 6, 7 and 8, which can led to larger error on the microphones more distant from the propeller. Hence, we can assert the overall consistency of the technique, even thought it presented a better performance when capturing RPM deviation from the experimental data, when comparing to the simulated propeller signal.
 
 
-
+\section{REFERENCES}
 \bibliographystyle{abcm}
 \renewcommand{\refname}{}
 \bibliography{bibfile}
 
 \section{RESPONSIBILITY NOTICE}
 
-The following text, properly adapted to the number of authors, must be included in the last section of the paper:
 
-The author(s) is (are) solely responsible for the printed material included in this paper.
+The authors are solely responsible for the printed material included in this paper.
 
 \end{document}
